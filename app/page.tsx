@@ -268,38 +268,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ──────── Everything is free ──────── */}
-      <section className="hp-pricing">
-        <div className="section-inner">
-          <ScrollReveal>
-            <div className="section-text">
-              <span className="section-eyebrow">pricing</span>
-              <h2 className="section-title">everything is free. always.</h2>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={80}>
-            <div className="hp-pricing-grid">
-              <div className="hp-pricing-card">
-                <div className="hp-pricing-tag">free</div>
-                <div className="hp-pricing-price">$0<span>/ forever</span></div>
-                <ul className="hp-pricing-list">
-                  <li>your own scarz.lol/handle</li>
-                  <li>themes, music, backgrounds</li>
-                  <li>20+ effects &amp; cursors</li>
-                  <li>live discord / spotify widgets</li>
-                  <li>profile analytics</li>
-                  <li>badges &amp; titles</li>
-                  <li>custom fonts, gradients, sounds</li>
-                  <li>no premium tiers, no payments</li>
-                </ul>
-                <Link href="/signup" className="btn btn-primary hp-pricing-btn">claim handle</Link>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
       {/* ──────── FAQ ──────── */}
       <section className="faq-section">
         <div className="section-inner">
