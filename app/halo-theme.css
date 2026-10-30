@@ -1,7 +1,7 @@
 .halo-theme {
   --pink: #ef4444;
-  --pink-dim: rgba(232, 127, 160, 0.28);
-  --pink-glow: rgba(232, 127, 160, 0.15);
+  --pink-dim: rgba(239, 68, 68, 0.28);
+  --pink-glow: rgba(239, 68, 68, 0.15);
   --black: #080809;
   --surface: #0e0e11;
   --surface2: #13131a;
@@ -39,7 +39,7 @@
   content: '';
   position: fixed;
   inset: 0;
-  background: radial-gradient(ellipse 90% 60% at 50% -5%, rgba(232, 127, 160, 0.11) 0%, rgba(232, 127, 160, 0.03) 55%, rgba(232, 127, 160, 0) 85%);
+  background: radial-gradient(ellipse 90% 60% at 50% -5%, rgba(239, 68, 68, 0.11) 0%, rgba(239, 68, 68, 0.03) 55%, rgba(239, 68, 68, 0) 85%);
   pointer-events: none;
   z-index: -1;
 }
@@ -184,13 +184,13 @@
   background: var(--pink);
   color: #1a060e;
   border-color: var(--pink);
-  box-shadow: 0 4px 20px rgba(232, 127, 160, 0.25);
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.25);
 }
 
 .halo-theme .btn-primary:hover {
   background: #f090b5;
   border-color: #f090b5;
-  box-shadow: 0 8px 28px rgba(232, 127, 160, 0.4);
+  box-shadow: 0 8px 28px rgba(239, 68, 68, 0.4);
 }
 
 .halo-theme .btn-ghost {
@@ -312,8 +312,8 @@
 }
 
 .halo-theme .claim-frame:focus-within {
-  border-color: rgba(232, 127, 160, 0.45);
-  box-shadow: 0 0 0 3px rgba(232, 127, 160, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  border-color: rgba(239, 68, 68, 0.45);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .halo-theme .claim-icon,
@@ -381,7 +381,7 @@
   transform: translateX(-50%);
   width: 120vw;
   height: 120vh;
-  background: radial-gradient(ellipse at 50% 25%, rgba(232, 127, 160, 0.09) 0%, rgba(232, 127, 160, 0.03) 50%, rgba(232, 127, 160, 0) 80%);
+  background: radial-gradient(ellipse at 50% 25%, rgba(239, 68, 68, 0.09) 0%, rgba(239, 68, 68, 0.03) 50%, rgba(239, 68, 68, 0) 80%);
   pointer-events: none;
   z-index: -1;
 }
@@ -469,7 +469,7 @@
   height: 44px;
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background: rgba(232, 127, 160, 0.1);
+  background: rgba(239, 68, 68, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -738,11 +738,11 @@
 }
 
 .halo-theme .pricing-card.active-card {
-  border-color: rgba(232, 127, 160, 0.3);
+  border-color: rgba(239, 68, 68, 0.3);
   box-shadow:
-    0 0 0 1px rgba(232, 127, 160, 0.15),
-    0 20px 60px rgba(232, 127, 160, 0.15),
-    0 0 80px rgba(232, 127, 160, 0.08);
+    0 0 0 1px rgba(239, 68, 68, 0.15),
+    0 20px 60px rgba(239, 68, 68, 0.15),
+    0 0 80px rgba(239, 68, 68, 0.08);
 }
 
 .halo-theme .pricing-card.inactive-card {
@@ -755,7 +755,7 @@
   right: -60px;
   width: 180px;
   height: 180px;
-  background: radial-gradient(circle, rgba(232, 127, 160, 0.15) 0%, rgba(232, 127, 160, 0) 70%);
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0) 70%);
   pointer-events: none;
 }
 
@@ -780,7 +780,7 @@
 }
 
 .halo-theme .plan-badge.monthly {
-  background: rgba(232, 127, 160, 0.15);
+  background: rgba(239, 68, 68, 0.15);
   color: var(--pink);
   border: 1px solid var(--pink-dim);
 }
@@ -1201,8 +1201,8 @@
   gap: 8px;
   padding: 6px 16px 6px 12px;
   border-radius: 999px;
-  background: rgba(232, 127, 160, 0.08);
-  border: 1px solid rgba(232, 127, 160, 0.2);
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
   color: var(--pink);
   font-size: 0.78rem;
   font-weight: 600;
@@ -1297,8 +1297,8 @@
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  background: rgba(232, 127, 160, 0.07);
-  border: 1px solid rgba(232, 127, 160, 0.22);
+  background: rgba(239, 68, 68, 0.07);
+  border: 1px solid rgba(239, 68, 68, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1308,7 +1308,7 @@
   color: var(--pink);
   margin-bottom: 22px;
   flex-shrink: 0;
-  box-shadow: 0 0 20px rgba(232, 127, 160, 0.08);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.08);
 }
 
 .halo-theme .step-arrow {
@@ -1316,7 +1316,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 16px; /* vertically align with circle centre */
-  color: rgba(232, 127, 160, 0.25);
+  color: rgba(239, 68, 68, 0.25);
 }
 
 .halo-theme .step-title {
@@ -1520,7 +1520,7 @@
   transform: translateX(-50%);
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(232, 127, 160, 0.15), rgba(232, 127, 160, 0) 70%);
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0) 70%);
   pointer-events: none;
 }
 
@@ -1632,8 +1632,8 @@
   gap: 10px;
   padding: 10px 14px;
   border-radius: 12px;
-  background: rgba(232, 127, 160, 0.06);
-  border: 1px solid rgba(232, 127, 160, 0.12);
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.12);
   width: 100%;
 }
 
@@ -1750,15 +1750,15 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(232, 127, 160, 0.7) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(239, 68, 68, 0.7) 50%, transparent 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .halo-theme .feature-card-new:hover {
-  border-color: rgba(232, 127, 160, 0.18);
+  border-color: rgba(239, 68, 68, 0.18);
   transform: translateY(-4px);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(232, 127, 160, 0.08);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(239, 68, 68, 0.08);
 }
 
 .halo-theme .feature-card-new:hover::after {
@@ -1781,7 +1781,7 @@
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: rgba(232, 127, 160, 0.1);
+  background: rgba(239, 68, 68, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1841,7 +1841,7 @@
 }
 
 .halo-theme .showcase-card:hover {
-  border-color: rgba(232, 127, 160, 0.15);
+  border-color: rgba(239, 68, 68, 0.15);
 }
 
 .halo-theme .showcase-card-large {
@@ -1899,12 +1899,12 @@
   padding: 80px 48px;
   border-radius: 28px;
   background: linear-gradient(160deg, rgba(20, 14, 22, 0.95) 0%, rgba(14, 14, 18, 0.98) 60%);
-  border: 1px solid rgba(232, 127, 160, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.15);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 80px rgba(232, 127, 160, 0.06), inset 0 1px 0 rgba(255,255,255,0.04);
+  box-shadow: 0 0 80px rgba(239, 68, 68, 0.06), inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 .halo-theme .cta-card::before {
@@ -1913,7 +1913,7 @@
   inset: 0;
   background:
     radial-gradient(ellipse 60% 50% at 20% 110%, rgba(139, 92, 246, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% -10%, rgba(232, 127, 160, 0.1) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 50% at 80% -10%, rgba(239, 68, 68, 0.1) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -1924,7 +1924,7 @@
   transform: translateX(-50%);
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(232, 127, 160, 0.12), rgba(232, 127, 160, 0) 68%);
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.12), rgba(239, 68, 68, 0) 68%);
   pointer-events: none;
 }
 
@@ -3038,12 +3038,12 @@
   height: auto;
   display: block;
   border-radius: 22px;
-  border: 3px solid rgba(232, 127, 160, 0.55);
+  border: 3px solid rgba(239, 68, 68, 0.55);
   transform: rotateY(-16deg) rotateX(2deg) scaleY(1.15);
   transform-origin: center center;
   box-shadow:
-    0 0 0 1.5px rgba(232, 127, 160, 0.2),
-    0 40px 100px -30px rgba(232, 127, 160, 0.3),
+    0 0 0 1.5px rgba(239, 68, 68, 0.2),
+    0 40px 100px -30px rgba(239, 68, 68, 0.3),
     0 60px 120px -30px rgba(0, 0, 0, 0.75);
   transition: transform .5s cubic-bezier(.22,.61,.36,1);
   will-change: transform;
@@ -3095,8 +3095,8 @@
   max-width: 520px;
   padding: 16px 18px;
   border-radius: 18px;
-  border: 1px solid rgba(232, 127, 160, 0.18);
-  background: linear-gradient(135deg, rgba(232, 127, 160, 0.08), rgba(232, 127, 160, 0.02));
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), rgba(239, 68, 68, 0.02));
   box-shadow: 0 24px 60px -28px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
   text-decoration: none;
   color: inherit;
@@ -3104,8 +3104,8 @@
 }
 .halo-theme .hp-potd-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(232, 127, 160, 0.4);
-  box-shadow: 0 30px 70px -28px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(232, 127, 160, 0.2) inset;
+  border-color: rgba(239, 68, 68, 0.4);
+  box-shadow: 0 30px 70px -28px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(239, 68, 68, 0.2) inset;
 }
 .halo-theme .hp-potd-avatar {
   position: relative;
@@ -3115,7 +3115,7 @@
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--potd-accent, #ef4444);
-  box-shadow: 0 0 24px rgba(232, 127, 160, 0.35);
+  box-shadow: 0 0 24px rgba(239, 68, 68, 0.35);
 }
 .halo-theme .hp-potd-avatar-img {
   width: 100%;
@@ -3132,7 +3132,7 @@
   font-size: 28px;
   font-weight: 700;
   color: var(--potd-accent, #ef4444);
-  background: rgba(232, 127, 160, 0.12);
+  background: rgba(239, 68, 68, 0.12);
 }
 .halo-theme .hp-potd-meta {
   display: flex;
@@ -3175,14 +3175,14 @@
   gap: 6px;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(232, 127, 160, 0.12);
+  background: rgba(239, 68, 68, 0.12);
   color: #ffd0e0;
   font-size: 12px;
   font-weight: 600;
   transition: background 0.2s ease;
 }
 .halo-theme .hp-potd-card:hover .hp-potd-cta {
-  background: rgba(232, 127, 160, 0.22);
+  background: rgba(239, 68, 68, 0.22);
 }
 @media (max-width: 600px) {
   .halo-theme .hp-potd-card {
@@ -4510,3 +4510,4 @@
   outline-offset: 2px;
   border-radius: 4px;
 }
+

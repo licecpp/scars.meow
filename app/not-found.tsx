@@ -22,7 +22,7 @@ export default function NotFound() {
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Link
             href="/"
-            className="inline-flex items-center justify-center rounded-xl bg-gradient-to-b from-[#f290b0] to-[#d66f90] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_1px_0_rgba(255,255,255,0.25)_inset,0_6px_16px_-4px_rgba(232,127,160,0.5)]"
+            className="inline-flex items-center justify-center rounded-xl bg-gradient-to-b from-[#ef4444] to-[#b91c1c] px-5 py-2.5 text-sm font-semibold text-white shadow-[0_1px_0_rgba(255,255,255,0.25)_inset,0_6px_16px_-4px_rgba(239,68,68,0.5)]"
           >
             Take me home
           </Link>

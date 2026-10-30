@@ -138,7 +138,7 @@
 }
 
 .halo-theme .logo-lol {
-  background: linear-gradient(180deg, #f290b0 0%, #ef4444 100%);
+  background: linear-gradient(180deg, #ef4444 0%, #ef4444 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -163,12 +163,12 @@
   padding: 12px 22px !important;
 }
 .halo-theme .btn-primary {
-  background: linear-gradient(180deg, #f290b0 0%, #d64f4f 100%) !important;
+  background: linear-gradient(180deg, #ef4444 0%, #d64f4f 100%) !important;
   color: #1a0a12 !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.25),
-    0 1px 2px rgba(232, 127, 160, 0.25) !important;
+    0 1px 2px rgba(239, 68, 68, 0.25) !important;
 }
 .halo-theme .btn-primary:hover {
   filter: brightness(1.06);
@@ -210,7 +210,7 @@
      it reads as the CTA but doesn't shout next to a quiet ghost. */
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    0 1px 1px rgba(232, 127, 160, 0.18) !important;
+    0 1px 1px rgba(239, 68, 68, 0.18) !important;
 }
 
 /* ──────── Hero: Inter for big lowercase display ──────── */
@@ -230,7 +230,7 @@
 }
 .halo-theme .hero-title-gradient,
 .halo-theme .hero-rotator-word {
-  background: linear-gradient(120deg, #f290b0 0%, #d64f4f 50%, #ef4444 100%);
+  background: linear-gradient(120deg, #ef4444 0%, #d64f4f 50%, #ef4444 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -344,7 +344,7 @@
 /* ──────── Pricing ──────── */
 .halo-theme .hp-pricing-card-premium {
   border-color: var(--r-accent-soft) !important;
-  background: linear-gradient(180deg, rgba(232, 127, 160, 0.04) 0%, var(--r-bg-card) 100%) !important;
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.04) 0%, var(--r-bg-card) 100%) !important;
 }
 .halo-theme .hp-pricing-tag {
   font-family: var(--r-font-sans) !important;
@@ -490,3 +490,4 @@
   -webkit-text-fill-color: var(--r-accent) !important;
   font-weight: 600;
 }
+
