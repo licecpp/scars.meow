@@ -1,0 +1,64 @@
+[35mapp/[username]/page.tsx[m[36m:[m[32m4[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/[username]/page.tsx[m[36m:[m[32m37[m[36m:[m  admin: ReturnType<typeof [1;31mcreateAdminClient[m>,
+[35mapp/[username]/page.tsx[m[36m:[m[32m67[m[36m:[m  const admin = [1;31mcreateAdminClient[m()
+[35mapp/[username]/page.tsx[m[36m:[m[32m152[m[36m:[m  const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/admin/cleanup-unverified/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/admin/cleanup-unverified/route.ts[m[36m:[m[32m11[m[36m:[m  const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/analytics/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/analytics/route.ts[m[36m:[m[32m68[m[36m:[m    const supabase = [1;31mcreateAdminClient[m()
+[35mapp/api/appearance/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/appearance/route.ts[m[36m:[m[32m246[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/add-email/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/add-email/route.ts[m[36m:[m[32m48[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/change-email/start/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/change-email/start/route.ts[m[36m:[m[32m43[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/change-email/verify-new/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/change-email/verify-new/route.ts[m[36m:[m[32m30[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/change-email/verify-old/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/change-email/verify-old/route.ts[m[36m:[m[32m35[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/change-password/start/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/change-password/start/route.ts[m[36m:[m[32m27[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/change-password/verify/route.ts[m[36m:[m[32m4[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/change-password/verify/route.ts[m[36m:[m[32m45[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/check-username/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from "@/lib/supabase/admin"
+[35mapp/api/auth/check-username/route.ts[m[36m:[m[32m31[m[36m:[m  const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/delete-account/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/delete-account/route.ts[m[36m:[m[32m28[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/discord/callback/route.ts[m[36m:[m[32m5[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/discord/callback/route.ts[m[36m:[m[32m56[m[36m:[m  const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/discord/callback/route.ts[m[36m:[m[32m171[m[36m:[m  const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/discord/disconnect/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/discord/disconnect/route.ts[m[36m:[m[32m13[m[36m:[m  const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/forgot-password/reset/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/forgot-password/reset/route.ts[m[36m:[m[32m24[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/forgot-password/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/forgot-password/route.ts[m[36m:[m[32m26[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/forgot-password/verify/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/forgot-password/verify/route.ts[m[36m:[m[32m21[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/login/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/login/route.ts[m[36m:[m[32m64[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/login/verify/route.ts[m[36m:[m[32m5[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/login/verify/route.ts[m[36m:[m[32m44[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/logout/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/logout/route.ts[m[36m:[m[32m19[m[36m:[m        const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/magic-login/route.ts[m[36m:[m[32m4[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/magic-login/route.ts[m[36m:[m[32m75[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/magic-login/route.ts[m[36m:[m[32m194[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/send-verification/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/send-verification/route.ts[m[36m:[m[32m27[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/signup/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/signup/route.ts[m[36m:[m[32m162[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/signup/send-code/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/signup/send-code/route.ts[m[36m:[m[32m166[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/signup/verify/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/signup/verify/route.ts[m[36m:[m[32m78[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/auth/verify-email/route.ts[m[36m:[m[32m2[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/auth/verify-email/route.ts[m[36m:[m[32m24[m[36m:[m    const admin = [1;31mcreateAdminClient[m()
+[35mapp/api/custom-buttons/list/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from "@/lib/supabase/admin"
+[35mapp/api/custom-buttons/list/route.ts[m[36m:[m[32m17[m[36m:[m    const supabase = [1;31mcreateAdminClient[m()
+[35mapp/api/custom-buttons/route.ts[m[36m:[m[32m3[m[36m:[mimport { [1;31mcreateAdminClient[m } from "@/lib/supabase/admin"
+[35mapp/api/custom-buttons/route.ts[m[36m:[m[32m64[m[36m:[m    const supabase = [1;31mcreateAdminClient[m()
+[35mapp/api/custom-buttons/route.ts[m[36m:[m[32m161[m[36m:[m    const supabase = [1;31mcreateAdminClient[m()
+[35mapp/api/custom-buttons/route.ts[m[36m:[m[32m193[m[36m:[m    const supabase = [1;31mcreateAdminClient[m()
+[35mapp/api/discord-presence/[userId]/route.ts[m[36m:[m[32m33[m[36m:[mimport { [1;31mcreateAdminClient[m } from '@/lib/supabase/admin'
+[35mapp/api/discord-presence/[userId]/route.ts[m[36m:[m[32m63
