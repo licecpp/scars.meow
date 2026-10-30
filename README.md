@@ -4,6 +4,7 @@ A bio-link / customizable profile page platform. Users sign up, customize their
 public page (avatar, badges, music, social links, widgets, custom backgrounds,
 cursor effects, fonts, etc.), and share a single URL like `scarz.lol/yourname`.
 
+<<<<<<< HEAD
 Live at **[scarz.lol](https://scarz.lol)**.
 
 ---
@@ -158,3 +159,8 @@ Each script reads credentials from `.env` and is safe to re-run idempotently.
 Proprietary. All rights reserved. See `LICENSE`.
 
 
+=======
+Live at **[scars.meow](scars-meow.vercel.app)**.
+
+ready to make yours different?
+>>>>>>> 0df8c922e515e297ed184f3e97c3e364a8135475
