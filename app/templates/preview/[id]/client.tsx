@@ -415,7 +415,7 @@ export function TemplatePreviewClient({
                         className="h-full w-full"
                         style={{
                           backgroundColor: (rt.config?.background_color as string) || '#0b0b14',
-                          backgroundImage: `radial-gradient(100% 100% at 0% 0%, ${(rt.config?.accent_color as string) || '#e87fa0'}55, transparent 60%)`,
+                          backgroundImage: `radial-gradient(100% 100% at 0% 0%, ${(rt.config?.accent_color as string) || '#ef4444'}55, transparent 60%)`,
                         }}
                       />
                     )}
@@ -555,7 +555,7 @@ function RelatedMiniCard({ template: t }: { template: TemplateRow }) {
             className="h-full w-full"
             style={{
               backgroundColor: (t.config?.background_color as string) || '#0b0b14',
-              backgroundImage: `radial-gradient(100% 100% at 20% 10%, ${(t.config?.accent_color as string) || '#e87fa0'}55, transparent 60%)`,
+              backgroundImage: `radial-gradient(100% 100% at 20% 10%, ${(t.config?.accent_color as string) || '#ef4444'}55, transparent 60%)`,
             }}
           />
         )}

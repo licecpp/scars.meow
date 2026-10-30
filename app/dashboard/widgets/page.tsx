@@ -241,7 +241,7 @@ export default function WidgetsPage() {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [selectedType, setSelectedType] = useState<string>('')
-  const [newConfig, setNewConfig] = useState<Record<string, string>>({ accentColor: '#e87fa0' })
+  const [newConfig, setNewConfig] = useState<Record<string, string>>({ accentColor: '#ef4444' })
   const [displayMode, setDisplayMode] = useState<string>('carousel')
   const [pickerOpen, setPickerOpen] = useState(false)
   // Tracks any Discord widget the user has configured whose Discord
@@ -315,7 +315,7 @@ export default function WidgetsPage() {
 
   const openPicker = () => {
     setSelectedType('')
-    setNewConfig({ accentColor: '#e87fa0' })
+    setNewConfig({ accentColor: '#ef4444' })
     setPickerOpen(true)
   }
 
@@ -341,7 +341,7 @@ export default function WidgetsPage() {
       if (!res.ok) throw new Error(data.error || 'Failed to add widget')
       setWidgets(w => [...w, data.widget])
       setSelectedType('')
-      setNewConfig({ accentColor: '#e87fa0' })
+      setNewConfig({ accentColor: '#ef4444' })
       setPickerOpen(false)
       toast.success('Widget added')
     } catch (e: any) {
@@ -581,7 +581,7 @@ export default function WidgetsPage() {
               <label className="text-sm font-medium text-foreground">Platform</label>
               <Select
                 value={selectedType}
-                onValueChange={(v) => { setSelectedType(v); setNewConfig({ accentColor: '#e87fa0' }) }}
+                onValueChange={(v) => { setSelectedType(v); setNewConfig({ accentColor: '#ef4444' }) }}
               >
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a platform" />
@@ -678,15 +678,15 @@ export default function WidgetsPage() {
                   <div className="flex gap-2">
                     <input
                       type="color"
-                      value={newConfig.accentColor || '#e87fa0'}
+                      value={newConfig.accentColor || '#ef4444'}
                       onChange={(e) => setNewConfig({ ...newConfig, accentColor: e.target.value })}
                       className="h-10 w-14 cursor-pointer rounded-lg border border-border bg-transparent p-1"
                     />
                     <input
                       type="text"
-                      value={newConfig.accentColor || '#e87fa0'}
+                      value={newConfig.accentColor || '#ef4444'}
                       onChange={(e) => setNewConfig({ ...newConfig, accentColor: e.target.value })}
-                      placeholder="#e87fa0"
+                      placeholder="#ef4444"
                       className="h-10 flex-1 rounded-lg border border-border bg-surface-2 px-3 font-mono text-sm text-foreground"
                     />
                   </div>

@@ -13,7 +13,7 @@
 
    What this overlay does instead (subtractive refinement, not teardown):
    - Sans-serif (Inter) body, Syne kept for hero/headings.
-   - Pink (#e87fa0) preserved as a HIGHLIGHT - on the logo, on the rotator
+   - Pink (#ef4444) preserved as a HIGHLIGHT - on the logo, on the rotator
      word, on the primary CTA. Removed from places it was just paint
      (eyebrows, footer credits, every secondary surface).
    - Soft, single-direction gradients kept on the primary button only.
@@ -42,9 +42,9 @@
   --r-text-faint:   rgba(255, 255, 255, 0.22);
   --r-border:       rgba(255, 255, 255, 0.08);
   --r-border-hi:    rgba(255, 255, 255, 0.14);
-  --r-accent:       #e87fa0;
-  --r-accent-2:     #d66f90;
-  --r-accent-soft:  rgba(232, 127, 160, 0.12);
+  --r-accent:       #ef4444;
+  --r-accent-2:     #d64f4f;
+  --r-accent-soft:  rgba(239, 68, 68, 0.12);
 
   --r-font-sans:    'Inter', 'Geist Sans', -apple-system, system-ui, sans-serif;
   --r-font-display: 'Syne', 'Inter', -apple-system, system-ui, sans-serif;
@@ -66,7 +66,7 @@
 }
 
 /* ──────── Kill the ambient color wash ──────── */
-/* The page had three giant blurred orbs in pink (#e87fa0), Discord
+/* The page had three giant blurred orbs in pink (#ef4444), Discord
    blue (#5865F2), and purple (#8b5cf6) drifting around the viewport.
    Combined they read as the AI-default "ambient color wash" - exactly
    what the user pointed at as making the site look vibe-coded. Just
@@ -130,7 +130,7 @@
   font-weight: 700 !important;
 }
 .halo-theme .logo-rip {
-  background: linear-gradient(180deg, #f290b0 0%, #d66f90 100%);
+  background: linear-gradient(180deg, #f290b0 0%, #d64f4f 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -158,7 +158,7 @@
   padding: 12px 22px !important;
 }
 .halo-theme .btn-primary {
-  background: linear-gradient(180deg, #f290b0 0%, #d66f90 100%) !important;
+  background: linear-gradient(180deg, #f290b0 0%, #d64f4f 100%) !important;
   color: #1a0a12 !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
   box-shadow:
@@ -225,7 +225,7 @@
 }
 .halo-theme .hero-title-gradient,
 .halo-theme .hero-rotator-word {
-  background: linear-gradient(120deg, #f290b0 0%, #d66f90 50%, #e87fa0 100%);
+  background: linear-gradient(120deg, #f290b0 0%, #d64f4f 50%, #ef4444 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

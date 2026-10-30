@@ -96,16 +96,16 @@ function LineChart({ data }: { data: { date: string; views: number }[] }) {
     <svg viewBox={`0 0 ${w} ${h}`} className="w-full" preserveAspectRatio="none">
       <defs>
         <linearGradient id="viewsArea" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor="#e87fa0" stopOpacity="0.4" />
-          <stop offset="100%" stopColor="#e87fa0" stopOpacity="0" />
+          <stop offset="0%" stopColor="#ef4444" stopOpacity="0.4" />
+          <stop offset="100%" stopColor="#ef4444" stopOpacity="0" />
         </linearGradient>
       </defs>
       <polyline points={area} fill="url(#viewsArea)" />
-      <polyline points={points} fill="none" stroke="#e87fa0" strokeWidth="2" />
+      <polyline points={points} fill="none" stroke="#ef4444" strokeWidth="2" />
       {/* Point markers only on short ranges; 90d / all-time render as a clean
           line so we don't paint a dense blob of overlapping dots. */}
       {(single || data.length <= 31) && data.map((d, i) => (
-        <circle key={i} cx={xAt(i)} cy={yAt(d.views)} r="3" fill="#e87fa0" />
+        <circle key={i} cx={xAt(i)} cy={yAt(d.views)} r="3" fill="#ef4444" />
       ))}
     </svg>
   )

@@ -118,7 +118,7 @@ export async function GET() {
         {/* Centered wordmark, guns.lol-style (no mark, no tagline). */}
         <div style={{ position: 'relative', display: 'flex', fontSize: 196, fontWeight: 800, letterSpacing: '-0.045em', lineHeight: 1 }}>
           <span style={{ color: '#ffffff' }}>halo</span>
-          <span style={{ color: '#e87fa0' }}>.rip</span>
+          <span style={{ color: '#ef4444' }}>.rip</span>
         </div>
       </div>
     ),

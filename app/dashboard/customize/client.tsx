@@ -153,7 +153,7 @@ const CARD_STYLES = [
  */
 function CardStyleSwatch({ cardStyle }: { cardStyle: string }) {
   const styles = getCardContainerStyles({
-    accentColor: '#e87fa0',
+    accentColor: '#ef4444',
     backgroundColor: '#0b0b12',
     cardStyle,
     borderStyle: 'none',
@@ -616,15 +616,15 @@ function fromProfile(p: Profile): FormState {
     background_effect: p.background_effect || 'none',
     background_effect_color: (p as any).background_effect_color || '',
     username_effect: p.username_effect || 'none',
-    accent_color: p.accent_color || '#e87fa0',
+    accent_color: p.accent_color || '#ef4444',
     text_color: p.text_color || '#ffffff',
     background_color: p.background_color || '#030306',
     icon_color: p.icon_color || '#ffffff',
     profile_gradient_enabled: p.profile_gradient_enabled ?? false,
-    profile_gradient_primary: p.profile_gradient_primary || '#e87fa0',
+    profile_gradient_primary: p.profile_gradient_primary || '#ef4444',
     profile_gradient_secondary: p.profile_gradient_secondary || '#9b59b6',
     outline_enabled: p.outline_enabled ?? false,
-    outline_color: p.outline_color || '#e87fa0',
+    outline_color: p.outline_color || '#ef4444',
     outline_width: (p as any).outline_width ?? 2,
     profile_radius: p.profile_radius ?? 16,
     card_style: p.card_style || 'classic',
@@ -656,7 +656,7 @@ function fromProfile(p: Profile): FormState {
     socials_glow_mono: (p as any).socials_glow_mono ?? false,
     socials_below_widgets: (p as any).socials_below_widgets ?? false,
     glow_intensity: p.glow_intensity ?? 50,
-    glow_color: p.glow_color || '#e87fa0',
+    glow_color: p.glow_color || '#ef4444',
     views_location_position: (p as any).views_location_position || 'top-right',
     avatar_url: p.avatar_url || '',
     background_url: p.background_url || '',
@@ -666,14 +666,14 @@ function fromProfile(p: Profile): FormState {
     avatar_outline_color: (p as any).avatar_outline_color || '#ffffff',
     avatar_outline_size: (p as any).avatar_outline_size ?? 3,
     avatar_glow_enabled: (p as any).avatar_glow_enabled ?? false,
-    avatar_glow_color: (p as any).avatar_glow_color || '#e87fa0',
+    avatar_glow_color: (p as any).avatar_glow_color || '#ef4444',
     avatar_glow_size: Math.min(40, (p as any).avatar_glow_size ?? 16),
     click_sound_url: (p as any).click_sound_url || '',
     enter_sound_url: (p as any).enter_sound_url || '',
     click_sound_volume: (p as any).click_sound_volume ?? 100,
     enter_sound_volume: (p as any).enter_sound_volume ?? 100,
     cursor_effect: p.cursor_effect || 'none',
-    cursor_color: p.cursor_color || '#e87fa0',
+    cursor_color: p.cursor_color || '#ef4444',
     custom_cursor_url: p.custom_cursor_url || '',
     custom_cursor_hover_url: (p as any).custom_cursor_hover_url || '',
     music_enabled: p.music_enabled ?? false,
@@ -693,7 +693,7 @@ function fromProfile(p: Profile): FormState {
     enter_show_subtitle: (p as any).enter_show_subtitle ?? true,
     entrance_animation: (p as any).entrance_animation || 'fade',
     hover_effect: (p as any).hover_effect || 'none',
-    hover_effect_color: (p as any).hover_effect_color || '#e87fa0',
+    hover_effect_color: (p as any).hover_effect_color || '#ef4444',
     layout_mode: (p as any).layout_mode || 'default',
     bento_tiles: Array.isArray((p as any).bento_tiles) ? ((p as any).bento_tiles as unknown[]) : [],
     panel_size: (p as any).panel_size || 'medium',
@@ -746,7 +746,7 @@ function UsernameEffectsModal({
                   <UsernameDisplay
                     text={username}
                     effect={e.value}
-                    accentColor="#e87fa0"
+                    accentColor="#ef4444"
                     className="text-base font-semibold text-white"
                   />
                   {locked ? (
@@ -762,7 +762,7 @@ function UsernameEffectsModal({
           {/* Preview pane */}
           <div className="space-y-3">
             <div className="relative flex h-36 items-center justify-center overflow-hidden rounded-xl bg-[#1a1a20] border border-border">
-              <UsernameDisplay text={username} effect={picked} accentColor="#e87fa0" className="text-3xl font-bold text-white" />
+              <UsernameDisplay text={username} effect={picked} accentColor="#ef4444" className="text-3xl font-bold text-white" />
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground">{current.label}</p>
@@ -809,7 +809,7 @@ const CURSOR_EFFECT_ICONS: Record<string, IconComponent> = {
 }
 
 function CursorEffectIcon({ value, active }: { value: string; active: boolean }) {
-  const c = active ? '#e87fa0' : 'rgba(255,255,255,0.55)'
+  const c = active ? '#ef4444' : 'rgba(255,255,255,0.55)'
   if (value === 'bubble') {
     return (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke={c} strokeWidth="1.8" strokeLinecap="round">
@@ -960,7 +960,7 @@ function CursorEffectPreview({ value, color }: { value: string; color: string })
     wrap.addEventListener('mousemove', onMove)
     wrap.addEventListener('mouseleave', onLeave)
 
-    const hex = (color || '#e87fa0').replace('#', '').padEnd(6, '0')
+    const hex = (color || '#ef4444').replace('#', '').padEnd(6, '0')
     const r = parseInt(hex.slice(0, 2), 16)
     const g = parseInt(hex.slice(2, 4), 16)
     const b = parseInt(hex.slice(4, 6), 16)
@@ -1360,7 +1360,7 @@ function CursorEffectsModal({
                   <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">color</span>
                   <button
                     type="button"
-                    onClick={() => setPickedColor('#e87fa0')}
+                    onClick={() => setPickedColor('#ef4444')}
                     className="text-[11px] text-muted-foreground hover:text-foreground-secondary transition"
                   >
                     reset
@@ -1377,7 +1377,7 @@ function CursorEffectsModal({
                     type="text"
                     value={pickedColor || ''}
                     onChange={(e) => setPickedColor(e.target.value)}
-                    placeholder="#e87fa0"
+                    placeholder="#ef4444"
                     className="flex-1 bg-transparent text-xs text-foreground placeholder:text-muted-foreground outline-none font-mono"
                   />
                 </div>
@@ -3932,7 +3932,7 @@ export default function CustomizeClient({ profile, isPremium = false }: Props) {
           </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
-              { key: 'accent_color', label: 'Accent', def: '#e87fa0' },
+              { key: 'accent_color', label: 'Accent', def: '#ef4444' },
               { key: 'text_color', label: 'Text', def: '#ffffff' },
               { key: 'background_color', label: 'Background', def: '#030306' },
               { key: 'icon_color', label: 'Icon', def: '#ffffff' },

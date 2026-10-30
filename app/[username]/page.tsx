@@ -10,7 +10,7 @@ import { isReservedUsername } from '@/lib/reserved-usernames'
 import { UnclaimedUsernamePage } from '@/components/profile/unclaimed-username'
 
 // Force-dynamic + revalidate:0 = every request re-hits our server so a
-// transient 404 (e.g. someone visited halo.rip/foo before user `foo`
+// transient 404 (e.g. someone visited scars.meow/foo before user `foo`
 // registered) can't get cached by the CDN as a permanent 404.
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
@@ -82,8 +82,8 @@ export async function generateMetadata({ params }: ProfilePageProps) {
   const fallbackTitle = profile.display_name || profile.username || username
   const title = profile.embed_title || fallbackTitle
   const description =
-    profile.embed_description || profile.bio || `Check out ${fallbackTitle}'s profile on halo.rip`
-  const siteBase = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.halo.rip'
+    profile.embed_description || profile.bio || `Check out ${fallbackTitle}'s profile on scars.meow`
+  const siteBase = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.scars.meow'
   const profileUrl = `${siteBase}/${profile.username || username}`
   // Custom embed image wins; otherwise use the avatar OG proxy.
   // Discord's media proxy decides whether to animate a GIF embed from the
@@ -126,7 +126,7 @@ export async function generateMetadata({ params }: ProfilePageProps) {
       title,
       description,
       images: [{ url: ogImage, width: 512, height: 512, alt: `${title}'s profile picture`, ...(isGifEmbed ? { type: 'image/gif' } : {}) }],
-      siteName: 'halo.rip',
+      siteName: 'scars.meow',
     },
     twitter: {
       card: 'summary_large_image',

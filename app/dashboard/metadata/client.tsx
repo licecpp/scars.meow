@@ -10,7 +10,7 @@ import { uploadFile as sharedUpload } from '@/lib/upload'
 // 6 preset colors users can pick with one click. Tuned to be visually
 // distinct on the Discord embed accent strip.
 const COLOR_PRESETS: { label: string; value: string }[] = [
-  { label: 'Halo pink',     value: '#e87fa0' },
+  { label: 'Halo pink',     value: '#ef4444' },
   { label: 'Royal purple',  value: '#a855f7' },
   { label: 'Mint',          value: '#34d399' },
   { label: 'Gold',          value: '#fbbf24' },
@@ -63,7 +63,7 @@ function fromProfile(p: Profile): FormState {
     embed_description: p.embed_description || '',
     embed_image_url: p.embed_image_url || '',
     favicon_url: p.favicon_url || '',
-    embed_color: p.embed_color || '#e87fa0',
+    embed_color: p.embed_color || '#ef4444',
   }
 }
 
@@ -128,7 +128,7 @@ export default function MetadataClient({ profile }: Props) {
   const previewTitle = form.embed_title || profile.display_name || profile.username || 'your.handle'
   const previewDescription = form.embed_description || profile.bio || `Check out ${previewTitle}'s profile on scars.meow`
   const previewImage = form.embed_image_url || profile.avatar_url || null
-  const previewColor = /^#[0-9a-fA-F]{3,6}$/.test(form.embed_color) ? form.embed_color : '#e87fa0'
+  const previewColor = /^#[0-9a-fA-F]{3,6}$/.test(form.embed_color) ? form.embed_color : '#ef4444'
 
   // Dirty state: any field different from the last saved snapshot.
   const dirty = useMemo(() => (
@@ -210,7 +210,7 @@ export default function MetadataClient({ profile }: Props) {
                     type="text"
                     value={form.embed_color}
                     onChange={(e) => patch({ embed_color: e.target.value })}
-                    placeholder="#e87fa0"
+                    placeholder="#ef4444"
                     className="flex-1 rounded-xl border border-border bg-surface-2 px-3 py-2.5 font-mono text-sm uppercase text-foreground placeholder-muted-foreground/60 outline-none focus:border-[color:var(--accent)] transition-colors"
                   />
                 </div>

@@ -33,7 +33,7 @@ const RESERVED_USERNAMES = new Set([
   // someone can't sign up as "admin", "staff", "support" and abuse the
   // implied authority in DMs or screenshots.
   'admin', 'administrator', 'mod', 'moderator', 'staff', 'support',
-  'system', 'official', 'help', 'halo', 'root', 'owner', 'team',
+  'system', 'official', 'help', 'scars', 'root', 'owner', 'team',
   'security', 'noreply', 'no-reply', 'webmaster',
 ])
 

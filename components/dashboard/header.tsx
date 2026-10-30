@@ -54,7 +54,7 @@ export function DashboardHeader({ profile, onMenuClick }: DashboardHeaderProps) 
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.png" alt="" className="h-6 w-auto" />
           <span className="font-['Syne'] text-base font-extrabold tracking-tight">
-            <span className="text-foreground">halo</span>
+            <span className="text-foreground">scars</span>
             <span className="text-muted-foreground">.</span>
             <span className="text-primary">rip</span>
           </span>

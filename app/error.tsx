@@ -19,9 +19,9 @@ export default function ErrorBoundary({
     <main className="flex min-h-[100dvh] items-center justify-center bg-[#06060b] px-6 text-center">
       <div className="max-w-md">
         <div className="mb-6 font-['Syne'] text-[24px] font-extrabold tracking-tight">
-          <span className="text-white">halo</span>
+          <span className="text-white">scars</span>
           <span className="text-white/20">.</span>
-          <span className="text-[#e87fa0]">rip</span>
+          <span className="text-[#ef4444]">rip</span>
         </div>
         <h1 className="mb-3 text-3xl font-bold text-white">Something went wrong</h1>
         <p className="mb-8 text-sm text-white/55">

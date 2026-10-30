@@ -12,7 +12,7 @@ export default function NotFound() {
         <div className="mb-6 font-['Syne'] text-[28px] font-extrabold tracking-tight">
           <span className="text-white">halo</span>
           <span className="text-white/20">.</span>
-          <span className="text-[#e87fa0]">rip</span>
+          <span className="text-[#ef4444]">rip</span>
         </div>
         <h1 className="mb-3 text-7xl font-extrabold tracking-tight text-white">404</h1>
         <p className="mb-8 text-base text-white/55">

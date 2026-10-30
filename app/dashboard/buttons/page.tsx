@@ -32,7 +32,7 @@ export default function ButtonsPage() {
   const [newButton, setNewButton] = useState({
     label: "",
     url: "",
-    bg_color: "#e87fa0",
+    bg_color: "#ef4444",
     text_color: "#ffffff",
     media_url: "",
     media_type: "image",
@@ -139,7 +139,7 @@ export default function ButtonsPage() {
         setNewButton({
           label: "",
           url: "",
-          bg_color: "#e87fa0",
+          bg_color: "#ef4444",
           text_color: "#ffffff",
           media_url: "",
           media_type: "image",
@@ -248,7 +248,7 @@ export default function ButtonsPage() {
                           <div className="flex gap-2">
                             <input
                               type="color"
-                              value={editData.bg_color || "#e87fa0"}
+                              value={editData.bg_color || "#ef4444"}
                               onChange={(e) => handleEditChange("bg_color", e.target.value)}
                               className="h-11 w-14 cursor-pointer rounded-lg border border-border bg-transparent p-1"
                             />
@@ -330,7 +330,7 @@ export default function ButtonsPage() {
                           <div 
                             className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium shadow-lg"
                             style={{ 
-                              backgroundColor: editData.disable_background ? 'transparent' : (editData.bg_color || "#e87fa0"), 
+                              backgroundColor: editData.disable_background ? 'transparent' : (editData.bg_color || "#ef4444"), 
                               color: editData.text_color || "#ffffff",
                               border: editData.disable_background ? '1px solid rgba(255,255,255,0.1)' : undefined
                             }}
@@ -353,7 +353,7 @@ export default function ButtonsPage() {
                     <div 
                       className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium shadow-sm"
                       style={{ 
-                        backgroundColor: button.disable_background ? 'transparent' : (button.bg_color || "#e87fa0"), 
+                        backgroundColor: button.disable_background ? 'transparent' : (button.bg_color || "#ef4444"), 
                         color: button.text_color || "#ffffff",
                         border: button.disable_background ? '1px solid rgba(255,255,255,0.1)' : undefined
                       }}

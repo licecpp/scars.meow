@@ -21,9 +21,9 @@
   --surface-3: #1a1a21;
 
   /* ── Accent (pink) ── */
-  --primary: #e87fa0;
+  --primary: #ef4444;
   --primary-foreground: #1a0810;
-  --accent: #e87fa0;
+  --accent: #ef4444;
   --accent-foreground: #1a0810;
   --accent-soft: rgba(232, 127, 160, 0.12);
   --accent-ring: rgba(232, 127, 160, 0.42);
@@ -36,10 +36,10 @@
   --border: rgba(255, 255, 255, 0.07);
   --border-strong: rgba(255, 255, 255, 0.12);
   --input: #131318;
-  --ring: #e87fa0;
+  --ring: #ef4444;
 
   /* ── Charts ── */
-  --chart-1: #e87fa0;
+  --chart-1: #ef4444;
   --chart-2: #f0a4bd;
   --chart-3: #c77a99;
   --chart-4: #8b6f9e;
@@ -48,12 +48,12 @@
   /* ── Sidebar ── */
   --sidebar: #0a0a0d;
   --sidebar-foreground: #f4f4f7;
-  --sidebar-primary: #e87fa0;
+  --sidebar-primary: #ef4444;
   --sidebar-primary-foreground: #1a0810;
   --sidebar-accent: #131318;
   --sidebar-accent-foreground: #f4f4f7;
   --sidebar-border: rgba(255, 255, 255, 0.06);
-  --sidebar-ring: #e87fa0;
+  --sidebar-ring: #ef4444;
 
   /* ── Misc ── */
   --glow: rgba(232, 127, 160, 0.35);
@@ -85,9 +85,9 @@
   --surface: #0d0d11;
   --surface-2: #131318;
   --surface-3: #1a1a21;
-  --primary: #e87fa0;
+  --primary: #ef4444;
   --primary-foreground: #1a0810;
-  --accent: #e87fa0;
+  --accent: #ef4444;
   --accent-foreground: #1a0810;
   --accent-soft: rgba(232, 127, 160, 0.12);
   --accent-ring: rgba(232, 127, 160, 0.42);
@@ -96,20 +96,20 @@
   --border: rgba(255, 255, 255, 0.07);
   --border-strong: rgba(255, 255, 255, 0.12);
   --input: #131318;
-  --ring: #e87fa0;
-  --chart-1: #e87fa0;
+  --ring: #ef4444;
+  --chart-1: #ef4444;
   --chart-2: #f0a4bd;
   --chart-3: #c77a99;
   --chart-4: #8b6f9e;
   --chart-5: #6f8bbd;
   --sidebar: #0a0a0d;
   --sidebar-foreground: #f4f4f7;
-  --sidebar-primary: #e87fa0;
+  --sidebar-primary: #ef4444;
   --sidebar-primary-foreground: #1a0810;
   --sidebar-accent: #131318;
   --sidebar-accent-foreground: #f4f4f7;
   --sidebar-border: rgba(255, 255, 255, 0.06);
-  --sidebar-ring: #e87fa0;
+  --sidebar-ring: #ef4444;
   --glow: rgba(232, 127, 160, 0.35);
   --radius: 0.875rem;
 }
@@ -528,21 +528,21 @@ button:active:not(:disabled) { transform: translateY(0.5px) scale(0.985); }
 /* box-shadow for glow - does NOT break backdrop-filter on children */
 .hover-glow-card:hover {
   box-shadow:
-    0 0 0 1px color-mix(in srgb, var(--hover-effect-color, #e87fa0) 18%, transparent),
-    0 0 20px 4px color-mix(in srgb, var(--hover-effect-color, #e87fa0) 30%, transparent),
-    0 0 55px 12px color-mix(in srgb, var(--hover-effect-color, #e87fa0) 14%, transparent);
+    0 0 0 1px color-mix(in srgb, var(--hover-effect-color, #ef4444) 18%, transparent),
+    0 0 20px 4px color-mix(in srgb, var(--hover-effect-color, #ef4444) 30%, transparent),
+    0 0 55px 12px color-mix(in srgb, var(--hover-effect-color, #ef4444) 14%, transparent);
 }
 .hover-pulse-card:hover { animation: hover-pulse-glow 1.2s ease-in-out infinite; }
 .hover-shake-card:hover { animation: shake-x 0.3s linear 2; }
 
 @keyframes hover-pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 16px color-mix(in srgb, var(--hover-effect-color, #e87fa0) 30%, transparent);
+    box-shadow: 0 0 16px color-mix(in srgb, var(--hover-effect-color, #ef4444) 30%, transparent);
   }
   50% {
     box-shadow:
-      0 0 32px color-mix(in srgb, var(--hover-effect-color, #e87fa0) 55%, transparent),
-      0 0 60px color-mix(in srgb, var(--hover-effect-color, #e87fa0) 25%, transparent);
+      0 0 32px color-mix(in srgb, var(--hover-effect-color, #ef4444) 55%, transparent),
+      0 0 60px color-mix(in srgb, var(--hover-effect-color, #ef4444) 25%, transparent);
   }
 }
 

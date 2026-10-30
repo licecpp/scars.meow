@@ -16,8 +16,8 @@ export default function TermsOfService() {
           className="font-display text-lg font-semibold tracking-tight"
           aria-label="scars.meow home"
         >
-          <span className="text-foreground">halo</span>
-          <span className="text-primary">.rip</span>
+          <span className="text-foreground">scars</span>
+          <span className="text-primary">.meow</span>
         </Link>
       </header>
 

@@ -75,7 +75,7 @@ function previewOf(config: any): {
     display_name: (p.display_name as string) ?? null,
     username: null,  // never snapshotted (identity field); UI falls back to display_name
     bio: typeof p.bio === 'string' ? (p.bio as string).slice(0, 80) : null,
-    accent_color: (p.accent_color as string) ?? '#e87fa0',
+    accent_color: (p.accent_color as string) ?? '#ef4444',
     background_color: (p.background_color as string) ?? '#0a0a0f',
     background_url: (p.background_url as string) ?? null,
     card_style: (p.card_style as string) ?? 'glass',

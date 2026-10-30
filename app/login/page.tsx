@@ -535,7 +535,7 @@ function LoginPageContent() {
               type="checkbox"
               checked={rememberDevice}
               onChange={(e) => setRememberDevice(e.target.checked)}
-              className="size-4 cursor-pointer accent-[#e87fa0]"
+              className="size-4 cursor-pointer accent-[#ef4444]"
             />
             <span>
               <span className="block text-sm font-medium text-foreground">

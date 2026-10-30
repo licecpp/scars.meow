@@ -633,7 +633,7 @@ export default function SignupPage() {
               id="tos"
               checked={tosAccepted}
               onChange={(e) => setTosAccepted(e.target.checked)}
-              className="mt-0.5 size-4 shrink-0 cursor-pointer accent-[#e87fa0]"
+              className="mt-0.5 size-4 shrink-0 cursor-pointer accent-[#ef4444]"
             />
             <span className="text-sm text-muted-foreground">
               I agree to the{' '}

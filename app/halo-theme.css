@@ -1,5 +1,5 @@
 .halo-theme {
-  --pink: #e87fa0;
+  --pink: #ef4444;
   --pink-dim: rgba(232, 127, 160, 0.28);
   --pink-glow: rgba(232, 127, 160, 0.15);
   --black: #080809;
@@ -1058,7 +1058,7 @@
 .halo-theme .glow-orb.orb-1 {
   width: 600px;
   height: 600px;
-  background: #e87fa0;
+  background: #ef4444;
   top: -200px;
   left: 20%;
   animation: orb-drift-1 20s ease-in-out infinite;
@@ -1201,7 +1201,7 @@
 
 /* Title Gradient */
 .halo-theme .hero-title-gradient {
-  background: linear-gradient(135deg, #f0a0bc, #e87fa0, #a855f7, #6366f1, #e87fa0);
+  background: linear-gradient(135deg, #f0a0bc, #ef4444, #a855f7, #6366f1, #ef4444);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1523,7 +1523,7 @@
   position: absolute;
   inset: -3px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #e87fa0, #8b5cf6);
+  background: linear-gradient(135deg, #ef4444, #8b5cf6);
   animation: spin-slow 8s linear infinite;
 }
 
@@ -3102,7 +3102,7 @@
   height: 72px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid var(--potd-accent, #e87fa0);
+  border: 2px solid var(--potd-accent, #ef4444);
   box-shadow: 0 0 24px rgba(232, 127, 160, 0.35);
 }
 .halo-theme .hp-potd-avatar-img {
@@ -3119,7 +3119,7 @@
   justify-content: center;
   font-size: 28px;
   font-weight: 700;
-  color: var(--potd-accent, #e87fa0);
+  color: var(--potd-accent, #ef4444);
   background: rgba(232, 127, 160, 0.12);
 }
 .halo-theme .hp-potd-meta {

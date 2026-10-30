@@ -65,7 +65,7 @@ const RESET_DEFAULTS: Record<string, unknown> = {
   typing_speed: 100,
   music_volume: 80,
   glow_intensity: 50,
-  glow_color: '#e87fa0',
+  glow_color: '#ef4444',
   profile_opacity: 100,
   profile_blur: 0,
   profile_radius: 16,

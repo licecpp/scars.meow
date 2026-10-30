@@ -11,10 +11,10 @@ const UPLOAD_ROOT = process.env.UPLOAD_ROOT || '/var/lib/halo-uploads'
 
 const FALLBACK_SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <rect width="512" height="512" fill="#0e0e16"/>
-  <circle cx="256" cy="196" r="100" fill="#1a1a2e" stroke="#e87fa0" stroke-width="3"/>
-  <circle cx="256" cy="176" r="56" fill="#e87fa0" opacity="0.9"/>
-  <ellipse cx="256" cy="310" rx="96" ry="60" fill="#e87fa0" opacity="0.9"/>
-  <text x="256" y="468" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#e87fa0">halo.rip</text>
+  <circle cx="256" cy="196" r="100" fill="#1a1a2e" stroke="#ef4444" stroke-width="3"/>
+  <circle cx="256" cy="176" r="56" fill="#ef4444" opacity="0.9"/>
+  <ellipse cx="256" cy="310" rx="96" ry="60" fill="#ef4444" opacity="0.9"/>
+  <text x="256" y="468" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#ef4444">scars.meow</text>
 </svg>`
 
 // Cache OG images for 1 hour - avatar changes are infrequent
@@ -128,7 +128,7 @@ export async function GET(
             try { hopHost = new URL(currentUrl).hostname } catch { hopHost = '' }
             if (!currentUrl.startsWith('https://') || !ALLOWED_OG_HOSTS.some(h => hopHost === h || hopHost.endsWith('.' + h))) break
             const r = await fetch(currentUrl, {
-              headers: { 'User-Agent': 'halo.rip-og-bot/1.0' },
+              headers: { 'User-Agent': 'scars.meow-og-bot/1.0' },
               signal: controller.signal,
               redirect: 'manual',
             })

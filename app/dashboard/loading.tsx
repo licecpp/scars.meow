@@ -22,7 +22,7 @@ export default function DashboardLoading() {
       </div>
 
       {/* Profile URL card */}
-      <div className="h-20 rounded-2xl border border-[#e87fa0]/20 bg-[#e87fa0]/[0.05]" />
+      <div className="h-20 rounded-2xl border border-[#ef4444]/20 bg-[#ef4444]/[0.05]" />
 
       {/* 3 stat cards */}
       <div className="grid grid-cols-3 gap-2 sm:gap-4">

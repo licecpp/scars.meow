@@ -13,7 +13,7 @@ function Shell({ children }: { children: React.ReactNode }) {
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <header className="ds-container flex h-16 items-center">
         <Link href="/" className="font-display text-lg font-semibold tracking-tight">
-          <span className="text-foreground">halo</span>
+          <span className="text-foreground">scars</span>
           <span className="text-primary">.rip</span>
         </Link>
       </header>
