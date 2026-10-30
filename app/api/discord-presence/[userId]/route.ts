@@ -76,7 +76,7 @@ export async function GET(
     }
 
     if (!data) {
-      // User isn't being tracked - they aren't in halo.rip's
+      // User isn't being tracked - they aren't in scars.meow's
       // Discord server (or the bot hasn't seen their presence yet).
       // The widget renderer maps this error message into "Join
       // discord.gg/NgVh45gXbD to enable status tracking".

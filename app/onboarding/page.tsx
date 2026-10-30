@@ -205,7 +205,7 @@ export default function OnboardingPage() {
                       <div>
                         <p className="font-display text-lg font-bold">Premium</p>
                         <p className="text-sm text-foreground-secondary">
-                          $5 <span className="text-muted-foreground">one-time</span>
+                          free <span className="text-muted-foreground">forever</span>
                         </p>
                       </div>
                     </div>

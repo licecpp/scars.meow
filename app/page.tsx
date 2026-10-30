@@ -39,9 +39,9 @@ export default async function HomePage() {
           <Link href="/" className="nav-logo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png" alt="" style={{ height: 26, width: 'auto', marginRight: 8, verticalAlign: 'middle' }} />
-            <span className="logo-halo">halo</span>
+            <span className="logo-scars">scars</span>
             <span className="logo-dot">.</span>
-            <span className="logo-rip">rip</span>
+            <span className="logo-meow">meow</span>
           </Link>
           <span className="nav-divider">/</span>
           <ul className="nav-links">
@@ -217,20 +217,7 @@ export default async function HomePage() {
               />
             </ScrollReveal>
 
-            <ScrollReveal>
-              <FeatureRow
-                eyebrow="600+ animated avatar decorations"
-                title="discord-store decorations, free."
-                body={
-                  <>
-                    <p>every discord avatar decoration, mirrored and free for every scars.meow profile. cat ears, halos, crystal elks, the whole catalog.</p>
-                    <p>no other bio-link site has this. it&apos;s the single thing buyers (and creators) keep coming back for.</p>
-                  </>
-                }
-                visual={<DecorationStrip />}
-                side="left"
-              />
-            </ScrollReveal>
+             {/* Discord-store decorations section removed */}
 
             <ScrollReveal>
               <FeatureRow
@@ -250,7 +237,7 @@ export default async function HomePage() {
                       </div>
                       <div className="hp-widget-body">
                         <div className="hp-widget-label">now playing</div>
-                        <div className="hp-widget-title">tuuff <span>· rez</span></div>
+                        <div className="hp-widget-title">larp <span>· bunny</span></div>
                       </div>
                       <div className="hp-widget-eq" aria-hidden>
                         <span /><span /><span /><span />
@@ -278,95 +265,6 @@ export default async function HomePage() {
               />
             </ScrollReveal>
           </div>
-        </div>
-      </section>
-
-      {/* ──────── Compare ──────── */}
-      <section className="compare-section">
-        <div className="section-inner">
-          <ScrollReveal>
-            <div className="section-text">
-              <span className="section-eyebrow">vs. the rest</span>
-              <h2 className="section-title">it&apos;s a different product.</h2>
-              <p className="section-sub">
-                feature claims verified against each competitor&apos;s current public pricing page (nov 2026).
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={60}>
-            <div className="compare-table-wrap">
-              <table className="compare-table">
-                <thead>
-                  <tr>
-                    <th className="compare-th compare-th-feature">feature</th>
-                    <th className="compare-th compare-th-us"><span className="compare-brand">scars.meow</span></th>
-                    <th className="compare-th compare-th-them">linktree</th>
-                    <th className="compare-th compare-th-them">guns.lol</th>
-                    <th className="compare-th compare-th-them">beacons</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="compare-feature">video / gif profile background</td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                  </tr>
-                  <tr>
-                    <td className="compare-feature">auto-play music on open</td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                  </tr>
-                  <tr>
-                    <td className="compare-feature">live discord status widget</td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                  </tr>
-                  <tr>
-                    <td className="compare-feature">animated avatar decorations</td>
-                    <td className="compare-cell compare-yes">600+</td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                  </tr>
-                  <tr>
-                    <td className="compare-feature">stackable cursor + page effects</td>
-                    <td className="compare-cell compare-yes">50+</td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-no"><Minus size={16} /></td>
-                  </tr>
-                  <tr>
-                    <td className="compare-feature">custom fonts &amp; full theming</td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-partial">paid</td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-partial">paid</td>
-                  </tr>
-                  <tr>
-                    <td className="compare-feature">free tier with all core features</td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-partial">limited</td>
-                    <td className="compare-cell compare-yes"><Check size={16} strokeWidth={2.5} /></td>
-                    <td className="compare-cell compare-partial">limited</td>
-                  </tr>
-                  <tr className="compare-row-price">
-                    <td className="compare-feature">premium pricing</td>
-                    <td className="compare-cell compare-price-us">$5 <span>lifetime</span></td>
-                    <td className="compare-cell compare-price-them">$5–24 <span>/mo</span></td>
-                    <td className="compare-cell compare-price-them">€7,99 <span>lifetime</span></td>
-                    <td className="compare-cell compare-price-them">$10–90 <span>/mo</span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
@@ -420,22 +318,11 @@ export default async function HomePage() {
                   <span className="faq-toggle" aria-hidden>+</span>
                 </summary>
                 <p className="faq-a">
-                  yeah. free covers your link, themes, music, backgrounds, widgets, 20+ effects, and analytics. premium ($5 one-time) adds 30+ extra effects, animated avatar decorations, custom fonts, and the premium badge.
+                  yeah. free covers everything - your link, themes, music, backgrounds, widgets, 20+ effects, and analytics. no premium tiers, no payments.
                 </p>
               </details>
             </ScrollReveal>
 
-            <ScrollReveal>
-              <details className="faq-item">
-                <summary className="faq-q">
-                  <span>$5 once, really? what&apos;s the catch?</span>
-                  <span className="faq-toggle" aria-hidden>+</span>
-                </summary>
-                <p className="faq-a">
-                  no catch. one $5 payment, premium forever. we hate monthly subscriptions too. you get the premium badge auto-equipped, every locked effect, animated decorations, custom fonts, and any premium feature we ship in the future.
-                </p>
-              </details>
-            </ScrollReveal>
 
             <ScrollReveal>
               <details className="faq-item">
@@ -468,7 +355,7 @@ export default async function HomePage() {
                   <span className="faq-toggle" aria-hidden>+</span>
                 </summary>
                 <p className="faq-a">
-                  yes. background videos (up to 25 mb, we compress automatically), custom fonts (premium), custom button icons. the transcoder keeps videos sharp without nuking visitors&apos; data.
+                  yes. background videos (up to 25 mb, we compress automatically), custom fonts, custom button icons. the transcoder keeps videos sharp without nuking visitors&apos; data.
                 </p>
               </details>
             </ScrollReveal>
@@ -480,7 +367,7 @@ export default async function HomePage() {
                   <span className="faq-toggle" aria-hidden>+</span>
                 </summary>
                 <p className="faq-a">
-                  closest competitor. the headline difference: 600+ animated avatar decorations that work natively, plus our premium is $5 vs their €7,99. also faster on mobile since we transcode every uploaded video instead of serving raw mp4s.
+                  closest competitor. the headline difference: 600+ animated avatar decorations that work natively. also faster on mobile since we transcode every uploaded video instead of serving raw mp4s.
                 </p>
               </details>
             </ScrollReveal>
@@ -562,12 +449,12 @@ export default async function HomePage() {
               <Link href="/" className="nav-logo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logo.png" alt="" style={{ height: 24, width: 'auto', marginRight: 8, verticalAlign: 'middle' }} />
-                <span className="logo-halo">halo</span>
+                <span className="logo-scars">scars</span>
                 <span className="logo-dot">.</span>
-                <span className="logo-rip">rip</span>
+                <span className="logo-meow">meow</span>
               </Link>
               <p className="footer-tagline">one link. zero limits.</p>
-              <p className="footer-meta">est. 2024 · made in the discord</p>
+              <p className="footer-meta">est. 2026 · made in the discord</p>
             </div>
             <div className="footer-links-group">
               <div className="footer-col">
@@ -591,7 +478,7 @@ export default async function HomePage() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p className="footer-credit">made by <span className="footer-rez">rez</span> · scars.meow © 2024</p>
+            <p className="footer-credit">made by <span className="footer-rez">bunny</span> · scars.meow © 2026</p>
           </div>
         </div>
       </footer>

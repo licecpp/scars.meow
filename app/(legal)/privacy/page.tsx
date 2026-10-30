@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
           <header className="mt-8">
             <p className="text-eyebrow uppercase text-primary/80">Legal</p>
             <h1 className="mt-3 text-h1 font-display">Privacy Policy</h1>
-            <p className="mt-3 text-sm text-muted-foreground">Last updated: April 6, 2026</p>
+            <p className="mt-3 text-sm text-muted-foreground">Last updated: October 30, 2026</p>
           </header>
 
           <div className="mt-12 space-y-12 text-foreground-secondary leading-relaxed">
