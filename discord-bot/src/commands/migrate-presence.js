@@ -1,9 +1,9 @@
 /**
  * /migrate-presence - re-runnable DM blast to every user who has a
- * Discord Presence widget configured on their scars.meow profile.
+ * Discord Presence widget configured on their scarz.lol profile.
  *
- * Tells them Lanyard is out, scars.meow's own bot is in, and they
- * need to join the scars.meow Discord server for their widget to
+ * Tells them Lanyard is out, scarz.lol's own bot is in, and they
+ * need to join the scarz.lol Discord server for their widget to
  * keep working. The DM contains a "No" button that triggers the
  * "Are you sure?" follow-up flow (see events/migrate-buttons.js).
  *
@@ -39,7 +39,7 @@ const DM_INTERVAL_MS = 750
 
 export const data = new SlashCommandBuilder()
   .setName('migrate-presence')
-  .setDescription('DM every Discord-widget user telling them to join scars.meow (owner only)')
+  .setDescription('DM every Discord-widget user telling them to join scarz.lol (owner only)')
   .addBooleanOption((o) =>
     o.setName('dry_run').setDescription('Only show who WOULD be DMed, send nothing').setRequired(false),
   )
@@ -212,4 +212,5 @@ export async function execute(interaction) {
       .setTimestamp()],
   })
 }
+
 

@@ -127,18 +127,18 @@ client.once('ready', async () => {
   registerSchedules(client)
 
   // Register the in-house Lanyard replacement - presence tracking
-  // for scars.meow's main Discord server. The widget renderer reads
+  // for scarz.lol's main Discord server. The widget renderer reads
   // from `public.discord_presence` via /api/discord-presence/[id].
   registerPresenceTracker(client)
 
-  // Seed discord_presence with every current member of scars.meow's
+  // Seed discord_presence with every current member of scarz.lol's
   // Discord server so users who haven't fired a presenceUpdate
   // since the bot started still appear as "tracked". Also wires
   // guildMemberAdd / guildMemberRemove listeners to keep the
   // table live as people join / leave.
   registerGuildMemberTracker(client)
 
-  client.user.setActivity('scars.meow', { type: 3 })
+  client.user.setActivity('scarz.lol', { type: 3 })
 })
 
 // ── Deleted message watcher ───────────────────────────────────────────────────
@@ -194,7 +194,7 @@ client.on('messageDelete', async (message) => {
           { name: 'Deleted by', value: deleter, inline: true },
         ],
         timestamp: new Date().toISOString(),
-        footer: { text: 'scars.meow bot' },
+        footer: { text: 'scarz.lol bot' },
       }],
     })
   } catch (err) {
@@ -282,4 +282,5 @@ setInterval(() => {
   const uptime = Math.floor(process.uptime() / 60)
   console.log(`[Bot] ♥ uptime ${uptime}m | guilds ${client.guilds.cache.size} | ws ping ${client.ws.ping}ms`)
 }, 10 * 60 * 1000)
+
 

@@ -11,6 +11,7 @@ import { NextResponse } from 'next/server'
 export const dynamic = 'force-static'
 
 export async function GET() {
-  return NextResponse.redirect('https://scars.meow/.well-known/security.txt', 301)
+  return NextResponse.redirect('https://scarz.lol/.well-known/security.txt', 301)
 }
+
 

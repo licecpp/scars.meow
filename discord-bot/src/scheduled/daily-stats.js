@@ -56,7 +56,7 @@ export async function run(client) {
         { name: '👁️ Views today',     value: (viewsTodayRes.count || 0).toLocaleString(),  inline: true },
         { name: '🔨 Bans today',       value: (bansTodayRes.count || 0).toLocaleString(),  inline: true },
       )
-      .setFooter({ text: 'scars.meow · automated daily report' })
+      .setFooter({ text: 'scarz.lol · automated daily report' })
       .setTimestamp()
 
     const channel = await client.channels.fetch(channelId).catch(() => null)
@@ -85,4 +85,5 @@ export async function run(client) {
     throw err
   }
 }
+
 

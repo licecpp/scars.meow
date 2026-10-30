@@ -297,7 +297,7 @@ export default function BadgesClient({ badges, profile, ownedBadgeIds = [], equi
     <div className="space-y-6 pb-12">
       <div>
         <h1 className="text-2xl font-bold text-foreground">Badges</h1>
-        <p className="mt-1 text-sm text-muted-foreground">Browse all badges available on scars.meow and claim the ones you've earned.</p>
+        <p className="mt-1 text-sm text-muted-foreground">Browse all badges available on scarz.lol and claim the ones you've earned.</p>
       </div>
 
       <div className="rounded-2xl border border-border bg-surface p-5"
@@ -621,4 +621,5 @@ export default function BadgesClient({ badges, profile, ownedBadgeIds = [], equi
     </div>
   )
 }
+
 

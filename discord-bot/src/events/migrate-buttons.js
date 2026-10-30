@@ -1,5 +1,5 @@
 /**
- * Button handler for the Lanyard → scars.meow presence migration DM.
+ * Button handler for the Lanyard → scarz.lol presence migration DM.
  *
  * Flow:
  *   1. /migrate-presence DMs every user with a Discord widget.
@@ -11,7 +11,7 @@
  *   3. Clicking the final confirmation just acknowledges and ends
  *      the flow. We don't track per-user state; the migration is
  *      purely a nudge; whether the widget works depends on whether
- *      they actually join scars.meow's server (which we measure via
+ *      they actually join scarz.lol's server (which we measure via
  *      whether the bot sees their presenceUpdate events).
  *
  * customId conventions:
@@ -37,20 +37,20 @@ export function isMigrateButtonId(customId) {
 function initialDmEmbed() {
   return new EmbedBuilder()
     .setColor(BRAND_COLOR)
-    .setTitle('Important: scars.meow Discord widget update')
+    .setTitle('Important: scarz.lol Discord widget update')
     .setDescription(
       [
-        'hey, heads up about your **discord widget** on scars.meow.',
+        'hey, heads up about your **discord widget** on scarz.lol.',
         '',
-        'We just moved off Lanyard. From now on, scars.meow tracks Discord status using **our own** bot inside the scars.meow Discord server.',
+        'We just moved off Lanyard. From now on, scarz.lol tracks Discord status using **our own** bot inside the scarz.lol Discord server.',
         '',
-        '**To keep your widget working, leave the Lanyard server and join scars.meow:**',
+        '**To keep your widget working, leave the Lanyard server and join scarz.lol:**',
         INVITE_URL,
         '',
         "If you don't join, your Discord widget will go offline.",
       ].join('\n'),
     )
-    .setFooter({ text: 'scars.meow presence migration' })
+    .setFooter({ text: 'scarz.lol presence migration' })
     .setTimestamp()
 }
 
@@ -77,12 +77,12 @@ function areYouSureEmbed() {
     .setTitle('Are you sure?')
     .setDescription(
       [
-        '**Your Discord widget will stop working** if you don\'t join the scars.meow server.',
+        '**Your Discord widget will stop working** if you don\'t join the scarz.lol server.',
         '',
         `One click and you're in: ${INVITE_URL}`,
       ].join('\n'),
     )
-    .setFooter({ text: 'You can always add scars.meow later' })
+    .setFooter({ text: 'You can always add scarz.lol later' })
     .setTimestamp()
 }
 
@@ -111,7 +111,7 @@ function declinedEmbed() {
     .setTitle('Got it, widget paused')
     .setDescription(
       [
-        "Your Discord widget will show offline until you join the scars.meow server. Change your mind any time:",
+        "Your Discord widget will show offline until you join the scarz.lol server. Change your mind any time:",
         INVITE_URL,
       ].join('\n'),
     )
@@ -159,4 +159,5 @@ export const migrationDm = {
   buildEmbed: initialDmEmbed,
   buildComponents: initialDmComponents,
 }
+
 

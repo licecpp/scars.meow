@@ -104,7 +104,7 @@ export function validateFileSignature(
   // served from our /api/file endpoint with image/svg+xml the browser
   // executes inline scripts on direct navigation - which means a
   // malicious avatar URL becomes a stored-XSS link runnable in the
-  // scars.meow origin (cookies, /api/auth/me, every authed endpoint).
+  // scarz.lol origin (cookies, /api/auth/me, every authed endpoint).
   // No feature on the platform actually needs SVG uploads (favicons
   // accept PNG, avatars/backgrounds accept all raster formats + video)
   // so we reject SVG at validation time instead of trying to sanitize
@@ -236,4 +236,5 @@ const MAX_BYTES_BY_TYPE: Record<string, number> = {
 export function maxUploadBytes(type: string | null | undefined): number {
   return (type && MAX_BYTES_BY_TYPE[type]) || 25 * MB
 }
+
 

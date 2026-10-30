@@ -165,7 +165,7 @@ export async function POST(request: Request) {
 
     console.log('[Login] Sending verification email to:', profile.email)
     const emailResult = await resend.emails.send({
-      from: 'Halo <noreply@scars.meow>',
+      from: 'Halo <noreply@scarz.lol>',
       to: profile.email,
       subject: 'Login Verification - Halo',
       html: `
@@ -213,4 +213,5 @@ export async function POST(request: Request) {
 }
 
 // createSessionResponse is now imported from @/lib/create-session
+
 

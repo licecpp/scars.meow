@@ -88,7 +88,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-col gap-2 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 scars.meow - made in the Discord.</p>
+          <p>© 2026 scarz.lol - made in the Discord.</p>
           <p>
             built by <span className="text-foreground-secondary">rez</span>
           </p>
@@ -97,4 +97,5 @@ export function SiteFooter() {
     </footer>
   )
 }
+
 

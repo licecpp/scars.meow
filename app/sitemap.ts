@@ -12,7 +12,7 @@ import type { MetadataRoute } from 'next'
  * If we ever want a curated subset for SEO (e.g. the top leaderboard
  * profiles), add them here explicitly rather than listing everyone.
  */
-const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://scars.meow'
+const BASE = process.env.NEXT_PUBLIC_SITE_URL || 'https://scarz.lol'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -24,4 +24,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/tos`,         changeFrequency: 'yearly',  priority: 0.2 },
   ]
 }
+
 

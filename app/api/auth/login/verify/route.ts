@@ -82,8 +82,8 @@ export async function POST(request: Request) {
       }
     }
 
-    // Scope session cookies to .scars.meow so they reach both scars.meow
-    // and www.scars.meow - without this the cookies were host-only and
+    // Scope session cookies to .scarz.lol so they reach both scarz.lol
+    // and www.scarz.lol - without this the cookies were host-only and
     // the user appeared logged out the moment their browser
     // autocompleted into the other host. Matches lib/create-session.ts
     // and the Discord OAuth callback.
@@ -92,8 +92,8 @@ export async function POST(request: Request) {
       const appUrl = process.env.NEXT_PUBLIC_APP_URL || ''
       if (appUrl) {
         const host = new URL(appUrl).hostname
-        if (host === 'scars.meow' || host.endsWith('.scars.meow')) {
-          cookieDomain = '.scars.meow'
+        if (host === 'scarz.lol' || host.endsWith('.scarz.lol')) {
+          cookieDomain = '.scarz.lol'
         }
       }
     } catch { /* leave undefined in dev */ }
@@ -123,4 +123,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 })
   }
 }
+
 

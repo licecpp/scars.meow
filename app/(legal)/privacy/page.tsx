@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { IconArrowLeft } from '@tabler/icons-react'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | scars.meow',
-  description: 'Privacy Policy for scars.meow',
+  title: 'Privacy Policy | scarz.lol',
+  description: 'Privacy Policy for scarz.lol',
 }
 
 export default function PrivacyPolicy() {
@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
         <Link
           href="/"
           className="font-display text-lg font-semibold tracking-tight"
-          aria-label="scars.meow home"
+          aria-label="scarz.lol home"
         >
           <span className="text-foreground">scars</span>
           <span className="text-primary">.meow</span>
@@ -162,4 +162,5 @@ export default function PrivacyPolicy() {
     </div>
   )
 }
+
 

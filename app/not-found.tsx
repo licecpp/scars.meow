@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Page not found | scars.meow',
-  description: "That page doesn't exist on scars.meow.",
+  title: 'Page not found | scarz.lol',
+  description: "That page doesn't exist on scarz.lol.",
 }
 
 export default function NotFound() {
@@ -37,4 +37,5 @@ export default function NotFound() {
     </main>
   )
 }
+
 

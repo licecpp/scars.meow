@@ -1,4 +1,4 @@
-# scars.meow - Vercel deployment
+# scarz.lol - Vercel deployment
 
 This repository is configured for the Supabase + Vercel Blob architecture.
 
@@ -18,5 +18,6 @@ Never commit `.env` or secret keys.
 - Build: `npm run build`
 
 ## Production URL
-Set `NEXT_PUBLIC_SITE_URL` to your actual production URL, e.g. `https://scars.meow`.
+Set `NEXT_PUBLIC_SITE_URL` to your actual production URL, e.g. `https://scarz.lol`.
+
 

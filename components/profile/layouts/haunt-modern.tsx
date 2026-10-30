@@ -113,7 +113,7 @@ export function HauntModern(props: HauntLayoutProps) {
 
           // Crypto links: copy address to clipboard instead of navigating.
           // Without this, the browser treats the wallet address as a
-          // relative URL and goes to scars.meow/<address> -> 404.
+          // relative URL and goes to scarz.lol/<address> -> 404.
           if (CRYPTO_PLATFORMS.has(link.platform.toLowerCase())) {
             return (
               <HoverTooltip key={link.id} label={`Click to copy ${link.platform.toUpperCase()} address`}>
@@ -393,4 +393,5 @@ export function HauntModern(props: HauntLayoutProps) {
     </div>
   )
 }
+
 

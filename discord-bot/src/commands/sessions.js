@@ -148,7 +148,7 @@ async function forceLogout(interaction) {
   const ok = await confirm(interaction, {
     title: 'Force logout EVERY user?',
     body:
-      'This revokes every active session on scars.meow in one click. Every signed-in user gets kicked back to the login page on their next request.\n\n' +
+      'This revokes every active session on scarz.lol in one click. Every signed-in user gets kicked back to the login page on their next request.\n\n' +
       'Use this for security incidents - leaked keys, suspected compromise. Not for routine ops.',
     confirmLabel: 'Yes, kick everyone',
     danger: true,
@@ -173,4 +173,5 @@ async function forceLogout(interaction) {
     embeds: [successEmbed('Force Logout All', `All users have been logged out. ${count ?? 0} active sessions revoked.`)],
   })
 }
+
 

@@ -39,9 +39,9 @@ export default async function HomePage() {
           <Link href="/" className="nav-logo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png" alt="" style={{ height: 26, width: 'auto', marginRight: 8, verticalAlign: 'middle' }} />
-            <span className="logo-scars">scars</span>
+            <span className="logo-scarz">scarz</span>
             <span className="logo-dot">.</span>
-            <span className="logo-meow">meow</span>
+            <span className="logo-lol">lol</span>
           </Link>
           <span className="nav-divider">/</span>
           <ul className="nav-links">
@@ -85,13 +85,13 @@ export default async function HomePage() {
             </h1>
 
             <p className="hero-sub">
-              scars.meow lets you upload your music, run a video background, plug in your live discord status, stack cursor effects, and pick from 600+ animated avatar decorations. one link, your whole internet.
+              scarz.lol lets you upload your music, run a video background, plug in your live discord status, stack cursor effects, and pick from 600+ animated avatar decorations. one link, your whole internet.
             </p>
 
             <div className="claim-strip-wrapper">
               <form action="/signup" method="get" className="claim-row">
                 <div className="claim-frame">
-                  <span className="claim-prefix">scars.meow/</span>
+                  <span className="claim-prefix">scarz.lol/</span>
                   <input type="text" name="username" placeholder="yourname" className="claim-input" autoComplete="off" />
                 </div>
                 <button type="submit" className="btn btn-primary claim-btn">
@@ -110,7 +110,7 @@ export default async function HomePage() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/hero-mockup-v2.png"
-                alt="scars.meow profile editor preview"
+                alt="scarz.lol profile editor preview"
                 className="hero-mockup-img"
                 width={1919}
                 height={1079}
@@ -143,7 +143,7 @@ export default async function HomePage() {
         <div className="section-inner">
           <ScrollReveal>
             <div className="section-text">
-              <span className="section-eyebrow">live on scars.meow</span>
+              <span className="section-eyebrow">live on scarz.lol</span>
               <h2 className="section-title">real profiles. real people.</h2>
               <p className="section-sub">
                 six of them are below. click any card to open the actual profile. backgrounds play, music plays, widgets update.
@@ -169,7 +169,7 @@ export default async function HomePage() {
               <span className="section-eyebrow">what&apos;s in the box</span>
               <h2 className="section-title">not another linktree.</h2>
               <p className="section-sub">
-                scars.meow is a full profile builder. themes, music, widgets, decorations, effects. yours, not a template.
+                scarz.lol is a full profile builder. themes, music, widgets, decorations, effects. yours, not a template.
               </p>
             </div>
           </ScrollReveal>
@@ -284,7 +284,7 @@ export default async function HomePage() {
                 <div className="hp-pricing-tag">free</div>
                 <div className="hp-pricing-price">$0<span>/ forever</span></div>
                 <ul className="hp-pricing-list">
-                  <li>your own scars.meow/handle</li>
+                  <li>your own scarz.lol/handle</li>
                   <li>themes, music, backgrounds</li>
                   <li>20+ effects &amp; cursors</li>
                   <li>live discord / spotify widgets</li>
@@ -429,7 +429,7 @@ export default async function HomePage() {
               <p className="hp-final-sub">free to claim. 60 seconds to live. no card, no trial, no catch.</p>
               <div className="hp-final-actions">
                 <Link href="/signup" className="btn btn-primary btn-lg">
-                  claim scars.meow/yourname
+                  claim scarz.lol/yourname
                   <ArrowRight size={17} />
                 </Link>
                 <a href="https://discord.gg/NgVh45gXbD" target="_blank" rel="noreferrer" className="btn btn-ghost btn-lg">
@@ -449,9 +449,9 @@ export default async function HomePage() {
               <Link href="/" className="nav-logo">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src="/logo.png" alt="" style={{ height: 24, width: 'auto', marginRight: 8, verticalAlign: 'middle' }} />
-                <span className="logo-scars">scars</span>
+                <span className="logo-scarz">scarz</span>
                 <span className="logo-dot">.</span>
-                <span className="logo-meow">meow</span>
+                <span className="logo-lol">lol</span>
               </Link>
               <p className="footer-tagline">one link. zero limits.</p>
               <p className="footer-meta">est. 2026 · made in the discord</p>
@@ -478,11 +478,12 @@ export default async function HomePage() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p className="footer-credit">made by <span className="footer-rez">bunny</span> · scars.meow © 2026</p>
+            <p className="footer-credit">made by <span className="footer-rez">bunny</span> · scarz.lol © 2026</p>
           </div>
         </div>
       </footer>
     </div>
   )
 }
+
 

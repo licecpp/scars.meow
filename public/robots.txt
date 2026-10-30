@@ -6,5 +6,6 @@ Disallow: /login
 Disallow: /signup
 Disallow: /onboarding
 
-Sitemap: https://scars.meow/sitemap.xml
+Sitemap: https://scarz.lol/sitemap.xml
+
 

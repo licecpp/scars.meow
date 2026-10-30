@@ -893,9 +893,9 @@ export function GunsProfile({ profile, socialLinks, badges, badgeLoadout = [], t
 
   // Tab title is now owned exclusively by <TabTitleTypewriter /> in
   // app/[username]/page.tsx. The old animated-title effect that lived here
-  // (setting document.title to `<username> | scars.meow` and flipping ✦
+  // (setting document.title to `<username> | scarz.lol` and flipping ✦
   // frames) was fighting with the typewriter after the splash dismissed,
-  // causing the tab to flash "rez | scars.meow" mid-animation. Removed.
+  // causing the tab to flash "rez | scarz.lol" mid-animation. Removed.
 
   useEffect(() => {
     if (!contentVisible || !musicEnabled || !audioRef.current || !isPlaying) return
@@ -2109,4 +2109,5 @@ export function GunsProfile({ profile, socialLinks, badges, badgeLoadout = [], t
   )
 
 }
+
 

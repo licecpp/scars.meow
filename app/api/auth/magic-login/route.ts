@@ -166,7 +166,7 @@ export async function POST(request: Request) {
 
     // ── Mint a fresh session ──────────────────────────────────────
     // createSessionResponse sets session_token + user_id cookies
-    // with Domain=.scars.meow so the new session covers apex + www.
+    // with Domain=.scarz.lol so the new session covers apex + www.
     return createSessionResponse(profile.id, request)
   } catch (error) {
     console.error('[magic-login] error:', error)
@@ -216,4 +216,5 @@ export async function GET(request: Request) {
     return NextResponse.json({ valid: false, error: 'Could not check this link' }, { status: 500 })
   }
 }
+
 

@@ -52,22 +52,22 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://scars.meow'),
-  title: 'scars.meow | Create your perfect profile',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://scarz.lol'),
+  title: 'scarz.lol | Create your perfect profile',
   description:
     'Modern, feature-rich link-in-bio profiles with custom fonts, effects, music, and more.',
   openGraph: {
     type: 'website',
-    siteName: 'scars.meow',
+    siteName: 'scarz.lol',
     url: '/',
-    title: 'scars.meow | Create your perfect profile',
+    title: 'scarz.lol | Create your perfect profile',
     description:
       'Modern, feature-rich link-in-bio profiles with custom fonts, effects, music, and more.',
-    images: [{ url: '/api/og-cover?v=9', width: 1200, height: 630, alt: 'scars.meow' }],
+    images: [{ url: '/api/og-cover?v=9', width: 1200, height: 630, alt: 'scarz.lol' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'scars.meow | Create your perfect profile',
+    title: 'scarz.lol | Create your perfect profile',
     description:
       'Modern, feature-rich link-in-bio profiles with custom fonts, effects, music, and more.',
     images: ['/api/og-cover?v=9'],
@@ -117,4 +117,5 @@ export default function RootLayout({
     </html>
   )
 }
+
 

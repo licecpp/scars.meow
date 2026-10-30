@@ -40,14 +40,14 @@ export async function run(client) {
       const rank = i + 1
       const medal = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : `\`${rank}.\``
       const premium = (p.is_premium || p.premium_active) ? ' ⭐' : ''
-      return `${medal} [**${p.username}**](https://scars.meow/${p.username})${premium} - ${(p.view_count || 0).toLocaleString()} views`
+      return `${medal} [**${p.username}**](https://scarz.lol/${p.username})${premium} - ${(p.view_count || 0).toLocaleString()} views`
     })
 
     const embed = new EmbedBuilder()
       .setColor(BRAND_COLOR)
       .setTitle('🏆 Weekly Leaderboard')
       .setDescription(lines.join('\n') || 'No data this week.')
-      .setFooter({ text: 'scars.meow · top profiles by view count' })
+      .setFooter({ text: 'scarz.lol · top profiles by view count' })
       .setTimestamp()
 
     const channel = await client.channels.fetch(channelId).catch(() => null)
@@ -68,4 +68,5 @@ export async function run(client) {
     throw err
   }
 }
+
 

@@ -17,7 +17,7 @@ export function BannedScreen({
         <h1 className="mt-6 text-h1 font-display text-foreground">Access revoked</h1>
         <p className="mt-4 text-base leading-7 text-foreground-secondary">
           You have been banned from{' '}
-          <span className="font-medium text-foreground">scars.meow</span>
+          <span className="font-medium text-foreground">scarz.lol</span>
           {reason ? (
             <>
               {' '}
@@ -35,7 +35,7 @@ export function BannedScreen({
           ) : null}
         </p>
         <div className="mt-8 rounded-2xl border border-border bg-surface px-4 py-4 text-sm text-muted-foreground">
-          If you believe this was a mistake, contact the scars.meow staff team from
+          If you believe this was a mistake, contact the scarz.lol staff team from
           another account.
         </div>
         <div className="mt-8 flex items-center justify-center">
@@ -50,4 +50,5 @@ export function BannedScreen({
     </main>
   )
 }
+
 

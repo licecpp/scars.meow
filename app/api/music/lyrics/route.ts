@@ -29,7 +29,7 @@ export async function GET(request: Request) {
     if (artist) q.set('artist_name', artist)
     const res = await fetch(`https://lrclib.net/api/search?${q.toString()}`, {
       signal: AbortSignal.timeout(7000),
-      headers: { 'User-Agent': 'scars.meow (+https://scars.meow)' },
+      headers: { 'User-Agent': 'scarz.lol (+https://scarz.lol)' },
     })
     if (!res.ok) return NextResponse.json({ synced: null, plain: null, matched: null })
 
@@ -55,4 +55,5 @@ export async function GET(request: Request) {
     return NextResponse.json({ synced: null, plain: null, matched: null })
   }
 }
+
 

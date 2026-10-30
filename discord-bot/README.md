@@ -1,6 +1,6 @@
-# scars.meow Discord Bot
+# scarz.lol Discord Bot
 
-Marketplace + moderation bot for scars.meow. Public commands for looking up profiles, browsing the template marketplace, and redeeming premium codes. Staff commands for managing users, badges, titles, premium, sessions, broadcasts, and a durable audit log. Three scheduled tasks keep the platform tidy and the community informed.
+Marketplace + moderation bot for scarz.lol. Public commands for looking up profiles, browsing the template marketplace, and redeeming premium codes. Staff commands for managing users, badges, titles, premium, sessions, broadcasts, and a durable audit log. Three scheduled tasks keep the platform tidy and the community informed.
 
 ---
 
@@ -8,7 +8,7 @@ Marketplace + moderation bot for scars.meow. Public commands for looking up prof
 
 | Command | What it does |
 |---------|--------------|
-| `/profile lookup <username>` | Render a public scars.meow profile card |
+| `/profile lookup <username>` | Render a public scarz.lol profile card |
 | `/profile leaderboard [limit]` | Top profiles by view count (paginated) |
 | `/template browse [sort] [tag]` | Browse the template marketplace |
 | `/template trending` | Shortcut for `browse sort:trending` |
@@ -113,4 +113,5 @@ To grant admin without a redeploy: `/admin grant @discord-user`. The cache inval
 | Commands report rate-limited | Destructive commands are capped 5/min/admin |
 | Scheduled tasks not running | Confirm `[cron] registered 3 tasks` appears in startup logs |
 | Daily stats / leaderboard not posting | The matching channel env var must be set AND the bot must be in that channel |
+
 

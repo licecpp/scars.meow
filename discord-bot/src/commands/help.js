@@ -9,7 +9,7 @@ export const meta = { permission: 'public', rateLimit: 'cheap' }
 // post-consolidation; introspection would add a circular import hop
 // for marginal value.
 const PUBLIC = [
-  ['/profile lookup',      'Show a scars.meow profile'],
+  ['/profile lookup',      'Show a scarz.lol profile'],
   ['/profile leaderboard', 'Top profiles by view count'],
   ['/template browse',     'Browse public templates (sort + tag filter)'],
   ['/template trending',   'Shorthand for /template browse sort:trending'],
@@ -45,7 +45,7 @@ export async function execute(interaction) {
   const admin = await isAdmin(interaction.user.id)
   const embed = new EmbedBuilder()
     .setColor(BRAND_COLOR)
-    .setTitle('📖 scars.meow bot commands')
+    .setTitle('📖 scarz.lol bot commands')
     .setDescription('Use slash autocomplete to see arguments for each command.')
     .addFields(
       {
@@ -70,9 +70,10 @@ export async function execute(interaction) {
   }
 
   embed
-    .setFooter({ text: 'scars.meow' })
+    .setFooter({ text: 'scarz.lol' })
     .setTimestamp()
 
   return interaction.editReply({ embeds: [embed] })
 }
+
 

@@ -13,11 +13,11 @@ export const meta = { permission: 'public', rateLimit: 'public' }
 // Rate-limited via the framework (default 'public' = 15/min per user).
 export const data = new SlashCommandBuilder()
   .setName('profile')
-  .setDescription('scars.meow profile lookups')
+  .setDescription('scarz.lol profile lookups')
   .addSubcommand((sub) =>
     sub
       .setName('lookup')
-      .setDescription('Show a public scars.meow profile')
+      .setDescription('Show a public scarz.lol profile')
       .addStringOption((opt) => opt.setName('username').setDescription('Username').setRequired(true)))
   .addSubcommand((sub) =>
     sub
@@ -79,14 +79,15 @@ async function showLeaderboard(interaction) {
       const rank = start + i + 1
       const medal = rank === 1 ? '🥇 ' : rank === 2 ? '🥈 ' : rank === 3 ? '🥉 ' : ''
       const premium = (p.is_premium || p.premium_active) ? ' ⭐' : ''
-      return `${medal}\`${rank}.\` [**${p.username}**](https://scars.meow/${p.username})${premium} - ${(p.view_count || 0).toLocaleString()} views`
+      return `${medal}\`${rank}.\` [**${p.username}**](https://scarz.lol/${p.username})${premium} - ${(p.view_count || 0).toLocaleString()} views`
     })
     return new EmbedBuilder()
       .setColor(BRAND_COLOR)
-      .setTitle('🏆 scars.meow Leaderboard')
+      .setTitle('🏆 scarz.lol Leaderboard')
       .setDescription(lines.join('\n'))
       .setFooter({ text: `Page ${info.page} of ${info.totalPages} · top ${info.total}` })
       .setTimestamp()
   }, { pageSize: 10 })
 }
+
 

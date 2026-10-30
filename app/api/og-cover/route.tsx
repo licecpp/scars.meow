@@ -11,7 +11,7 @@ import sharp from 'sharp'
  *
  * guns.lol-style banner: a smooth pink/plum gradient (lighter toward the
  * upper-centre), a faint + sparse + scattered skull pattern, and the big
- * "scars.meow" wordmark centred.
+ * "scarz.lol" wordmark centred.
  *
  * The pattern is a single super-tile (4 skulls at varied rotations baked into a
  * large transparent square via sharp) referenced once and tiled with CSS
@@ -117,8 +117,8 @@ export async function GET() {
 
         {/* Centered wordmark, guns.lol-style (no mark, no tagline). */}
         <div style={{ position: 'relative', display: 'flex', fontSize: 196, fontWeight: 800, letterSpacing: '-0.045em', lineHeight: 1 }}>
-          <span style={{ color: '#ffffff' }}>halo</span>
-          <span style={{ color: '#ef4444' }}>.rip</span>
+          <span style={{ color: '#ffffff' }}>scarz</span>
+          <span style={{ color: '#ef4444' }}>.lol</span>
         </div>
       </div>
     ),
@@ -130,4 +130,5 @@ export async function GET() {
     },
   )
 }
+
 

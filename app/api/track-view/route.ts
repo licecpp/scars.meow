@@ -99,7 +99,7 @@ export async function POST(request: NextRequest) {
     if (!visitorId || !/^[0-9a-f]{32}$/i.test(visitorId)) {
       return NextResponse.json({ success: true })
     }
-    // Referer must be from scars.meow - same-origin XHR/fetch only.
+    // Referer must be from scarz.lol - same-origin XHR/fetch only.
     // Bots that POST cross-origin can't easily forge this header
     // (browsers strip / refuse to send Referer when origin doesn't
     // match). Optional, since some privacy-focused browsers strip
@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
     const refererHost = (() => {
       try { return referrer ? new URL(referrer).hostname : '' } catch { return '' }
     })()
-    if (refererHost && refererHost !== 'scars.meow' && !refererHost.endsWith('.scars.meow')) {
+    if (refererHost && refererHost !== 'scarz.lol' && !refererHost.endsWith('.scarz.lol')) {
       return NextResponse.json({ success: true })
     }
 
@@ -223,4 +223,5 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ views: 0 })
   }
 }
+
 

@@ -12,7 +12,7 @@ export const meta = { permission: 'public', rateLimit: 'public' }
 // table the website uses; queries are scoped to public templates only.
 export const data = new SlashCommandBuilder()
   .setName('template')
-  .setDescription('Browse scars.meow profile templates')
+  .setDescription('Browse scarz.lol profile templates')
   .addSubcommand((sub) =>
     sub
       .setName('browse')
@@ -82,7 +82,7 @@ async function browseTemplates(interaction, sort) {
           (t.description ? `${String(t.description).slice(0, 160)}\n` : '') +
           `by **@${author}** · ${tagList}\n` +
           `📥 ${t.uses_count} applied · ❤️ ${t.likes_count} · ` +
-          `[preview](https://scars.meow/templates/preview/${t.id})`,
+          `[preview](https://scarz.lol/templates/preview/${t.id})`,
         inline: false,
       }
     })
@@ -113,7 +113,7 @@ async function searchTemplates(interaction) {
       value:
         `by **@${t.author?.username || 'unknown'}** · ${t.tags?.length ? t.tags.map((x) => `\`${x}\``).join(' ') : '(no tags)'}\n` +
         `📥 ${t.uses_count} · ❤️ ${t.likes_count} · ` +
-        `[preview](https://scars.meow/templates/preview/${t.id})`,
+        `[preview](https://scarz.lol/templates/preview/${t.id})`,
       inline: false,
     }))
     return new EmbedBuilder()
@@ -124,4 +124,5 @@ async function searchTemplates(interaction) {
       .setTimestamp()
   }, { pageSize: 5 })
 }
+
 

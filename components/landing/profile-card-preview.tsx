@@ -63,7 +63,7 @@ export function ProfileCardPreview({ profile }: { profile: FeaturedProfile }) {
             profile aesthetic. */}
 
         <div className="hp-card-handle">
-          <span className="hp-card-handle-prefix">scars.meow/</span>
+          <span className="hp-card-handle-prefix">scarz.lol/</span>
           <span className="hp-card-handle-name">{profile.username}</span>
         </div>
 
@@ -107,4 +107,5 @@ export function ProfileCardPreview({ profile }: { profile: FeaturedProfile }) {
     </Link>
   )
 }
+
 

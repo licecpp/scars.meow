@@ -3,7 +3,7 @@
  *
  * Returns the latest presence snapshot the Discord bot wrote to
  * `public.discord_presence` for the requested user. The bot
- * subscribes to presenceUpdate events in scars.meow's main Discord
+ * subscribes to presenceUpdate events in scarz.lol's main Discord
  * server and upserts whenever a user's status or activity changes;
  * see discord-bot/src/events/presence-update.js.
  *
@@ -21,7 +21,7 @@
  *     }
  *   }
  *
- * When the user isn't tracked (not in scars.meow's server / bot
+ * When the user isn't tracked (not in scarz.lol's server / bot
  * hasn't seen them yet), we return success: false with a clear
  * message the widget can surface as "join discord.gg/NgVh45gXbD".
  *
@@ -76,7 +76,7 @@ export async function GET(
     }
 
     if (!data) {
-      // User isn't being tracked - they aren't in scars.meow's
+      // User isn't being tracked - they aren't in scarz.lol's
       // Discord server (or the bot hasn't seen their presence yet).
       // The widget renderer maps this error message into "Join
       // discord.gg/NgVh45gXbD to enable status tracking".
@@ -84,7 +84,7 @@ export async function GET(
         {
           success: false,
           error: 'not_tracked',
-          message: 'User not in scars.meow Discord - join discord.gg/NgVh45gXbD',
+          message: 'User not in scarz.lol Discord - join discord.gg/NgVh45gXbD',
         },
         { status: 404, headers: { 'Cache-Control': 'public, s-maxage=30' } },
       )

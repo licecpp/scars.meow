@@ -91,13 +91,13 @@ export async function POST(request: Request) {
       try {
         const resend = new Resend(process.env.RESEND_API_KEY)
         await resend.emails.send({
-          from: 'scars.meow <noreply@scars.meow>',
+          from: 'scarz.lol <noreply@scarz.lol>',
           to: email.toLowerCase(),
-          subject: 'Verify your email - scars.meow',
+          subject: 'Verify your email - scarz.lol',
           html: `
             <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 500px; margin: 0 auto; padding: 40px 20px; background: #0a0a0b;">
               <div style="text-align: center; margin-bottom: 30px;">
-                <h1 style="color: #a855f7; font-size: 28px; margin: 0;">scars.meow</h1>
+                <h1 style="color: #a855f7; font-size: 28px; margin: 0;">scarz.lol</h1>
               </div>
               <div style="background: #111113; border-radius: 12px; padding: 30px; border: 1px solid #222;">
                 <p style="color: #e5e5e5; font-size: 16px; margin: 0 0 20px 0;">
@@ -134,4 +134,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'An error occurred' }, { status: 500 })
   }
 }
+
 

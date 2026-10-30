@@ -44,7 +44,7 @@ export default function OnboardingPage() {
         <Link
           href="/"
           className="font-display text-lg font-semibold tracking-tight"
-          aria-label="scars.meow home"
+          aria-label="scarz.lol home"
         >
           <span className="text-foreground">halo</span>
           <span className="text-primary">.rip</span>
@@ -76,7 +76,7 @@ export default function OnboardingPage() {
                 <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-2xl border border-primary/30 bg-accent-soft">
                   <IconSearch className="size-7 text-primary" />
                 </div>
-                <h1 className="text-h2 font-display">Where did you find out about scars.meow?</h1>
+                <h1 className="text-h2 font-display">Where did you find out about scarz.lol?</h1>
                 <p className="mt-2 text-sm leading-relaxed text-foreground-secondary">
                   Help us understand how you discovered us.
                 </p>
@@ -133,7 +133,7 @@ export default function OnboardingPage() {
                 <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-2xl border border-primary/30 bg-accent-soft">
                   <IconLayoutGrid className="size-7 text-primary" />
                 </div>
-                <h1 className="text-h2 font-display">How are you planning to use scars.meow?</h1>
+                <h1 className="text-h2 font-display">How are you planning to use scarz.lol?</h1>
                 <p className="mt-2 text-sm leading-relaxed text-foreground-secondary">
                   We will tailor your experience accordingly.
                 </p>
@@ -330,4 +330,5 @@ export default function OnboardingPage() {
     </div>
   )
 }
+
 

@@ -1,10 +1,10 @@
-# scars.meow
+# scarz.lol
 
 A bio-link / customizable profile page platform. Users sign up, customize their
 public page (avatar, badges, music, social links, widgets, custom backgrounds,
-cursor effects, fonts, etc.), and share a single URL like `scars.meow/yourname`.
+cursor effects, fonts, etc.), and share a single URL like `scarz.lol/yourname`.
 
-Live at **[scars.meow](https://scars.meow)**.
+Live at **[scarz.lol](https://scarz.lol)**.
 
 ---
 
@@ -113,7 +113,7 @@ For Railway:
 2. Set all env vars from `.env.example`.
 3. Railway runs `pnpm install --frozen-lockfile` then `pnpm build` then
    `pnpm start` automatically.
-4. Point `scars.meow` at Railway via Cloudflare DNS.
+4. Point `scarz.lol` at Railway via Cloudflare DNS.
 
 Cloudflare proxy on for SSL + DDoS + edge caching.
 
@@ -156,4 +156,5 @@ Each script reads credentials from `.env` and is safe to re-run idempotently.
 ## License
 
 Proprietary. All rights reserved. See `LICENSE`.
+
 

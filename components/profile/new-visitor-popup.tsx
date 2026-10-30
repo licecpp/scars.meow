@@ -77,7 +77,7 @@ export function NewVisitorPopup({ ownerUsername }: { ownerUsername: string }) {
 
         {/* Description */}
         <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '14px', lineHeight: 1.65, margin: '0 0 28px' }}>
-          scars.meow is a free platform for creating your own custom profile page. Share your links, social accounts, and more in one place. Thousands of people already have their own.
+          scarz.lol is a free platform for creating your own custom profile page. Share your links, social accounts, and more in one place. Thousands of people already have their own.
         </p>
 
         {/* Stats row */}
@@ -158,4 +158,5 @@ export function NewVisitorPopup({ ownerUsername }: { ownerUsername: string }) {
     </div>
   )
 }
+
 

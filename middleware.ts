@@ -6,17 +6,17 @@ const MAINTENANCE_MODE = false
 const ALLOWED_IPS: string[] = [] // Add your IP here to bypass, e.g. ['123.456.789.0']
 
 export async function middleware(request: NextRequest) {
-  // Canonical host: redirect www.scars.meow → scars.meow with a 308
+  // Canonical host: redirect www.scarz.lol → scarz.lol with a 308
   // permanent redirect (preserves method + body, browsers cache it).
   //
   // Why this matters: the session cookies set during login are
   // host-only (no Domain attribute), so they live only on whichever
   // exact host the browser saw at login time. When a user types into
-  // the URL bar and Brave/Chrome autocompletes to https://www.scars.meow
+  // the URL bar and Brave/Chrome autocompletes to https://www.scarz.lol
   // they get sent to a host where their cookies don't exist - the
   // page renders as logged-out and any profile widgets that fetch
   // session-scoped data fail. The browser follows this redirect to
-  // the apex and re-sends the cookies it has for scars.meow, so the
+  // the apex and re-sends the cookies it has for scarz.lol, so the
   // user stays logged in seamlessly.
   //
   // Keep the path, query, and hash so deep links survive the rewrite.
@@ -29,9 +29,9 @@ export async function middleware(request: NextRequest) {
   // only authoritative source for canonicalisation.
   const hostHeader = request.headers.get('host') || ''
   const rawHost = hostHeader.split(':')[0].toLowerCase()
-  if (rawHost === 'www.scars.meow' || request.nextUrl.hostname === 'www.scars.meow') {
+  if (rawHost === 'www.scarz.lol' || request.nextUrl.hostname === 'www.scarz.lol') {
     const target = request.nextUrl.clone()
-    target.hostname = 'scars.meow'
+    target.hostname = 'scarz.lol'
     target.port = ''
     return NextResponse.redirect(target, 308)
   }
@@ -101,9 +101,9 @@ export async function middleware(request: NextRequest) {
       maxAge: 60 * 60 * 24 * 365,
       path: '/',
       // Same domain scope as session cookies so the cookie reaches
-      // scars.meow and the canonical-redirected www.scars.meow both.
-      ...(process.env.NEXT_PUBLIC_APP_URL?.includes('scars.meow')
-        ? { domain: '.scars.meow' }
+      // scarz.lol and the canonical-redirected www.scarz.lol both.
+      ...(process.env.NEXT_PUBLIC_APP_URL?.includes('scarz.lol')
+        ? { domain: '.scarz.lol' }
         : {}),
     })
   }
@@ -115,4 +115,5 @@ export const config = {
     '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],
 }
+
 

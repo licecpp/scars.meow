@@ -23,7 +23,7 @@ export function AuthShell({
         <Link
           href="/"
           className="flex items-center gap-2"
-          aria-label="scars.meow home"
+          aria-label="scarz.lol home"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo.png" alt="" className="h-7 w-auto" />
@@ -55,4 +55,5 @@ export function AuthShell({
     </div>
   )
 }
+
 

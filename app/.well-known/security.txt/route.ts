@@ -7,15 +7,15 @@ import { NextResponse } from 'next/server'
  * served with text/plain so curl + browsers + scanners all parse it
  * correctly. Expires in 1 year - update this file before then.
  */
-const SECURITY_TXT = `Contact: mailto:security@scars.meow
+const SECURITY_TXT = `Contact: mailto:security@scarz.lol
 Contact: https://discord.gg/NgVh45gXbD
 Expires: 2027-05-23T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://scars.meow/.well-known/security.txt
-Policy: https://scars.meow/tos
+Canonical: https://scarz.lol/.well-known/security.txt
+Policy: https://scarz.lol/tos
 
 # Scope
-# scars.meow and all *.scars.meow subdomains are in scope. Out of scope:
+# scarz.lol and all *.scarz.lol subdomains are in scope. Out of scope:
 #   - User-uploaded content (responsibility of the uploading user)
 #   - Third-party services we integrate with (Discord, Stripe, Cloudflare, etc.)
 #   - Social-engineering of staff or users
@@ -37,4 +37,5 @@ export async function GET() {
     },
   })
 }
+
 

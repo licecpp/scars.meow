@@ -126,7 +126,7 @@ export default function MetadataClient({ profile }: Props) {
   }
 
   const previewTitle = form.embed_title || profile.display_name || profile.username || 'your.handle'
-  const previewDescription = form.embed_description || profile.bio || `Check out ${previewTitle}'s profile on scars.meow`
+  const previewDescription = form.embed_description || profile.bio || `Check out ${previewTitle}'s profile on scarz.lol`
   const previewImage = form.embed_image_url || profile.avatar_url || null
   const previewColor = /^#[0-9a-fA-F]{3,6}$/.test(form.embed_color) ? form.embed_color : '#ef4444'
 
@@ -297,7 +297,7 @@ export default function MetadataClient({ profile }: Props) {
                   <img src={previewImage} alt="" className="aspect-[1.91/1] w-full object-cover" />
                 </div>
               )}
-              <p className="mb-0.5 text-[12px] font-semibold text-white/90">scars.meow</p>
+              <p className="mb-0.5 text-[12px] font-semibold text-white/90">scarz.lol</p>
               <p className="text-[14px] font-bold leading-tight text-[#00a8fc]">{previewTitle}</p>
               <p className="mt-1 line-clamp-3 text-[13px] leading-snug text-[#dbdee1]">{previewDescription}</p>
             </div>
@@ -431,4 +431,5 @@ function UploadTile({
     </div>
   )
 }
+
 

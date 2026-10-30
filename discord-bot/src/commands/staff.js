@@ -52,8 +52,8 @@ export const data = new SlashCommandBuilder()
   .addSubcommand((sub) =>
     sub
       .setName('audit-by-target')
-      .setDescription('All audit log entries targeting a scars.meow user')
-      .addStringOption((opt) => opt.setName('username').setDescription('scars.meow username').setRequired(true)))
+      .setDescription('All audit log entries targeting a scarz.lol user')
+      .addStringOption((opt) => opt.setName('username').setDescription('scarz.lol username').setRequired(true)))
   .addSubcommand((sub) =>
     sub
       .setName('audit-by-command')
@@ -297,7 +297,7 @@ async function auditByTarget(interaction) {
   // interpolated, so a value like
   //   `foo),executor_discord_id.eq.SOMEID`
   // would extend the OR clause to pull audit rows for a totally
-  // different executor. Reject anything that isn't a scars.meow
+  // different executor. Reject anything that isn't a scarz.lol
   // username before it ever hits the filter string.
   if (!/^[a-z0-9_]{1,32}$/.test(raw)) {
     return interaction.editReply({
@@ -400,5 +400,6 @@ async function scheduleRunNow(interaction) {
     return interaction.editReply({ embeds: [errorEmbed('Error', `${taskKey} threw: ${err.message}`)] })
   }
 }
+
 
 

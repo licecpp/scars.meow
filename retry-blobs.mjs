@@ -22,7 +22,7 @@ const BLOB_HOST_PRIVATE = `${storeId}.private.blob.vercel-storage.com`
 const BLOB_HOST_PUBLIC = `${storeId}.public.blob.vercel-storage.com`
 
 async function fetchBlob(pathname) {
-  // Try private first (most scars.meow files), then public
+  // Try private first (most scarz.lol files), then public
   for (const host of [BLOB_HOST_PRIVATE, BLOB_HOST_PUBLIC]) {
     const url = `https://${host}/${pathname}`
     const res = await fetch(url, { headers: { Authorization: 'Bearer ' + TOKEN } })
@@ -60,4 +60,5 @@ do {
 console.log('')
 console.log('Done. Newly migrated:', count, 'Skipped (already had):', skipped, 'Errors:', errors)
 console.timeEnd('total')
+
 

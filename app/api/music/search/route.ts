@@ -31,7 +31,7 @@ export async function GET(request: Request) {
     const params = new URLSearchParams({ term: q, entity: 'song', media: 'music', limit: '8' })
     const res = await fetch(`https://itunes.apple.com/search?${params.toString()}`, {
       signal: AbortSignal.timeout(7000),
-      headers: { 'User-Agent': 'scars.meow (+https://scars.meow)' },
+      headers: { 'User-Agent': 'scarz.lol (+https://scarz.lol)' },
     })
     if (!res.ok) return NextResponse.json({ results: [] })
 
@@ -55,4 +55,5 @@ export async function GET(request: Request) {
     return NextResponse.json({ results: [] })
   }
 }
+
 

@@ -18,9 +18,10 @@ export default async function DashboardPage() {
       displayName={profile.display_name || uname}
       uidDisplay={uidDisplay}
       viewCount={profile.view_count || 0}
-      profileUrl={`https://scars.meow/${uname}`}
+      profileUrl={`https://scarz.lol/${uname}`}
       profilePath={`/${uname}`}
     />
   )
 }
+
 

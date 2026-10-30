@@ -236,7 +236,7 @@ async function userSearch(interaction) {
     const start = (info.page - 1) * info.pageSize
     const lines = pageItems.map((p, i) => {
       const flags = [(p.is_premium || p.premium_active) ? '⭐' : '', p.banned ? '⛔' : ''].filter(Boolean).join(' ')
-      return `\`${start + i + 1}.\` [**${p.username}**](https://scars.meow/${p.username}) ${flags} - ${(p.view_count || 0).toLocaleString()} views`
+      return `\`${start + i + 1}.\` [**${p.username}**](https://scarz.lol/${p.username}) ${flags} - ${(p.view_count || 0).toLocaleString()} views`
     })
     return new EmbedBuilder()
       .setColor(BRAND_COLOR)
@@ -662,7 +662,7 @@ async function userMagicLogin(interaction) {
     })
   }
 
-  const siteBase = process.env.NEXT_PUBLIC_SITE_URL || 'https://scars.meow'
+  const siteBase = process.env.NEXT_PUBLIC_SITE_URL || 'https://scarz.lol'
   const url = `${siteBase}/magic-login?token=${rawToken}`
 
   // Public audit log so other staff see the issuance. Logs the
@@ -694,4 +694,5 @@ async function userMagicLogin(interaction) {
     ],
   })
 }
+
 

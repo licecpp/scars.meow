@@ -244,7 +244,7 @@ export function RezOverview({
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-foreground">Welcome back</h1>
-          <p className="mt-1 text-sm text-muted-foreground">Here&apos;s a quick look at your scars.meow page.</p>
+          <p className="mt-1 text-sm text-muted-foreground">Here&apos;s a quick look at your scarz.lol page.</p>
         </div>
         <div className="flex items-center gap-2">
           <button
@@ -380,4 +380,5 @@ export function RezOverview({
     </div>
   )
 }
+
 

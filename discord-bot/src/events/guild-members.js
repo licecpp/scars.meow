@@ -1,16 +1,16 @@
 /**
  * Guild member tracker - keeps `discord_presence` in sync with
- * scars.meow's actual Discord server membership.
+ * scarz.lol's actual Discord server membership.
  *
  * Why this exists: Discord's `presenceUpdate` event only fires when
  * a user's status CHANGES. A user who's been offline (or idle, or
  * online without status changes) since the bot started tracking
  * has no presence row, even though they're in the server. That
  * produces false positives for the /dashboard/widgets nag banner
- * ("you aren't in scars.meow Discord") and for the widget renderer
+ * ("you aren't in scarz.lol Discord") and for the widget renderer
  * itself.
  *
- * Fix: on bot ready, fetch every member of scars.meow's guild and
+ * Fix: on bot ready, fetch every member of scarz.lol's guild and
  * upsert a presence row with their current status (or 'offline'
  * if Discord has nothing on them). After that the existing
  * presenceUpdate listener keeps everyone up-to-date. The
@@ -115,7 +115,7 @@ async function seedAllMembers(guild) {
     return
   }
 
-  // Skip bots - they don't need presence rows since scars.meow widgets
+  // Skip bots - they don't need presence rows since scarz.lol widgets
   // can't be configured to point at bot users.
   const human = [...members.values()].filter((m) => !m.user.bot)
 
@@ -178,4 +178,5 @@ export function registerGuildMemberTracker(client) {
 
   console.log('[guild-members] ✅ listeners registered')
 }
+
 

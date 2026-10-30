@@ -60,8 +60,8 @@ async function setBlacklist(interaction, blacklisted) {
 
   const title = blacklisted ? 'Support access removed' : 'Support access restored'
   const body = blacklisted
-    ? 'You have been blacklisted from support tickets by scars.meow staff.'
-    : 'Your support access has been restored by scars.meow staff.'
+    ? 'You have been blacklisted from support tickets by scarz.lol staff.'
+    : 'Your support access has been restored by scarz.lol staff.'
 
   await supabase.from('inbox_messages').insert({
     user_id: profile.id,
@@ -111,4 +111,5 @@ async function listBlacklist(interaction) {
       .setTimestamp()
   }, { pageSize: 15 })
 }
+
 

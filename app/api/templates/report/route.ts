@@ -57,7 +57,7 @@ export async function POST(request: Request) {
     const webhook = process.env.DISCORD_REPORTS_WEBHOOK
     if (webhook) {
       const authorName = (tpl.author as any)?.username || 'unknown'
-      const siteBase = process.env.NEXT_PUBLIC_SITE_URL || 'https://scars.meow'
+      const siteBase = process.env.NEXT_PUBLIC_SITE_URL || 'https://scarz.lol'
       const payload = {
         // allowed_mentions: { parse: [] } neuters @everyone /
         // @here / role mentions in the embed body. The `reason`
@@ -95,4 +95,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: error?.message || 'Failed' }, { status: 500 })
   }
 }
+
 

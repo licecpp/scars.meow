@@ -219,7 +219,7 @@ export async function POST(request: Request) {
 
     // Send verification email
     const emailResult = await resend.emails.send({
-      from: 'Halo <noreply@scars.meow>',
+      from: 'Halo <noreply@scarz.lol>',
       to: email,
       subject: 'Verify your email - Halo',
       html: `
@@ -260,4 +260,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 })
   }
 }
+
 

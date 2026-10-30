@@ -104,11 +104,11 @@ export async function PUT(request: Request) {
           //      context on the rendered profile.
           //   2. Hostname check used .includes() instead of a suffix
           //      match, so an attacker-controlled domain like
-          //      'evil.scars.meow.attacker.com' passed validation.
+          //      'evil.scarz.lol.attacker.com' passed validation.
           //
           // The shared helper handles relative paths via a strict
           // regex (no quotes, parens, semicolons, whitespace) and
-          // does a hostname=='scars.meow' || hostname.endsWith('.scars.meow')
+          // does a hostname=='scarz.lol' || hostname.endsWith('.scarz.lol')
           // suffix check.
           if (value === null || value === '') {
             updates[key] = null
@@ -167,4 +167,5 @@ export async function PUT(request: Request) {
 export async function PATCH(request: Request) {
   return PUT(request)
 }
+
 

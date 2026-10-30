@@ -48,7 +48,7 @@ export async function POST(request: Request) {
     })
 
     const emailResult = await resend.emails.send({
-      from: 'Halo <noreply@scars.meow>',
+      from: 'Halo <noreply@scarz.lol>',
       to: emailLower,
       subject: 'Password Reset - Halo',
       html: `
@@ -84,4 +84,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 })
   }
 }
+
 

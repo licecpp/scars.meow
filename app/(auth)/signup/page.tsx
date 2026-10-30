@@ -106,7 +106,7 @@ export default function SignupPage() {
   const verifyWidgetIdRef = useRef<string | null>(null)
   const [verifyTurnstileToken, setVerifyTurnstileToken] = useState('')
 
-  // Prefill the username field when arriving from /scars.meow/<unclaimed>.
+  // Prefill the username field when arriving from /scarz.lol/<unclaimed>.
   // The Unclaimed-username page links here with ?username=<name> so the
   // user can claim in one tap without retyping. We also prefill from the
   // landing page's "claim" CTA which uses the same query param.
@@ -746,4 +746,5 @@ export default function SignupPage() {
     </AuthShell>
   )
 }
+
 

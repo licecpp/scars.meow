@@ -9,7 +9,7 @@ import {
 export const meta = { permission: 'public', rateLimit: 'public' }
 
 // Public-facing license-code redemption. The user redeems via Discord and
-// we activate premium on the linked scars.meow account.
+// we activate premium on the linked scarz.lol account.
 //
 // Linking is done on the website (Settings -> Discord -> Connect). If the
 // user runs /redeem without linking, we tell them what to do first.
@@ -29,7 +29,7 @@ export async function execute(interaction) {
   const code = interaction.options.getString('code').trim()
   if (!code) return interaction.editReply({ embeds: [errorEmbed('Missing', 'Provide a code.')] })
 
-  // 1. Find the user's scars.meow profile via discord_id.
+  // 1. Find the user's scarz.lol profile via discord_id.
   const { data: profile, error: profErr } = await supabase
     .from('profiles')
     .select('id, username, is_premium, premium_active, premium_type')
@@ -40,8 +40,8 @@ export async function execute(interaction) {
     return interaction.editReply({
       embeds: [infoEmbed(
         'Link your account first',
-        'You need to link your Discord account to scars.meow before redeeming codes.\n\n' +
-        'Open <https://scars.meow/dashboard/settings>, find the Discord section, and click Connect. Then run `/redeem` again.',
+        'You need to link your Discord account to scarz.lol before redeeming codes.\n\n' +
+        'Open <https://scarz.lol/dashboard/settings>, find the Discord section, and click Connect. Then run `/redeem` again.',
       )],
     })
   }
@@ -111,8 +111,9 @@ export async function execute(interaction) {
     embeds: [successEmbed(
       'Premium activated! ⭐',
       `**${premiumType === 'lifetime' ? 'Lifetime' : 'Monthly'} premium** has been activated on \`${profile.username}\`.\n\n` +
-      `Open <https://scars.meow/dashboard/customize> to start using the premium features.`,
+      `Open <https://scarz.lol/dashboard/customize> to start using the premium features.`,
     )],
   })
 }
+
 

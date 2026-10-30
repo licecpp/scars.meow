@@ -11,7 +11,7 @@ export function profileEmbed(profile, stats = {}) {
   const embed = new EmbedBuilder()
     .setColor(profile.banned ? ERROR_COLOR : BRAND_COLOR)
     .setTitle(title)
-    .setURL(`https://scars.meow/${profile.username || ''}`)
+    .setURL(`https://scarz.lol/${profile.username || ''}`)
     .addFields(
       { name: '?? Username', value: `\`${profile.username || 'N/A'}\``, inline: true },
       { name: '??? Views', value: (profile.view_count || 0).toLocaleString(), inline: true },
@@ -47,7 +47,7 @@ export function profileEmbed(profile, stats = {}) {
     embed.addFields({ name: '??? Clicks (30d)', value: String(stats.clicks), inline: true })
   }
 
-  embed.setFooter({ text: 'scars.meow' }).setTimestamp()
+  embed.setFooter({ text: 'scarz.lol' }).setTimestamp()
   return embed
 }
 
@@ -57,7 +57,7 @@ export function userInfoEmbed(profile, extra = {}) {
   const embed = new EmbedBuilder()
     .setColor(profile.banned ? ERROR_COLOR : BRAND_COLOR)
     .setTitle(`?? ${title}`)
-    .setURL(`https://scars.meow/${profile.username || ''}`)
+    .setURL(`https://scarz.lol/${profile.username || ''}`)
 
   const fields = [
     { name: '?? Username',   value: `\`${profile.username || 'N/A'}\``,             inline: true },
@@ -88,7 +88,7 @@ export function userInfoEmbed(profile, extra = {}) {
     try { embed.setThumbnail(profile.avatar_url) } catch {}
   }
 
-  embed.setFooter({ text: 'scars.meow admin' }).setTimestamp()
+  embed.setFooter({ text: 'scarz.lol admin' }).setTimestamp()
   return embed
 }
 
@@ -98,7 +98,7 @@ export function logEmbed(action, details, color = BRAND_COLOR) {
     .setTitle(action)
     .setDescription(details)
     .setTimestamp()
-    .setFooter({ text: 'scars.meow bot' })
+    .setFooter({ text: 'scarz.lol bot' })
 }
 
 export function successEmbed(title, description) {
@@ -149,6 +149,7 @@ export function statsEmbed(stats) {
       { name: '?? Bot Uptime',    value: `${Math.floor(process.uptime() / 60)}m`, inline: true },
     )
     .setTimestamp()
-    .setFooter({ text: 'scars.meow' })
+    .setFooter({ text: 'scarz.lol' })
 }
+
 

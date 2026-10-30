@@ -52,19 +52,19 @@ const CONTEXT_COPY: Record<
   { subject: string; heading: string; intro: string }
 > = {
   'email-change-current': {
-    subject: 'Confirm your email change - scars.meow',
+    subject: 'Confirm your email change - scarz.lol',
     heading: 'Email change requested',
-    intro: "You asked to change the email on your scars.meow account. To prove this is you, enter the code below on the settings page. We'll then send a separate code to your new address before any change is applied.",
+    intro: "You asked to change the email on your scarz.lol account. To prove this is you, enter the code below on the settings page. We'll then send a separate code to your new address before any change is applied.",
   },
   'email-change-new': {
-    subject: 'Verify your new email - scars.meow',
+    subject: 'Verify your new email - scarz.lol',
     heading: 'New email verification',
     intro: 'You verified your current email, so this is the second step. Enter the code below on the settings page to finish moving your account to this address.',
   },
   'password-change': {
-    subject: 'Confirm your password change - scars.meow',
+    subject: 'Confirm your password change - scarz.lol',
     heading: 'Password change requested',
-    intro: 'You asked to change the password on your scars.meow account. Enter the code below on the settings page before picking your new password. If this was not you, you can ignore this email and your password will stay the same.',
+    intro: 'You asked to change the password on your scarz.lol account. Enter the code below on the settings page before picking your new password. If this was not you, you can ignore this email and your password will stay the same.',
   },
 }
 
@@ -85,13 +85,13 @@ export async function sendCodeEmail({ to, username, code, context }: SendCodeArg
   const resend = new Resend(process.env.RESEND_API_KEY)
   try {
     const resp = await resend.emails.send({
-      from: 'scars.meow <noreply@scars.meow>',
+      from: 'scarz.lol <noreply@scarz.lol>',
       to,
       subject,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 500px; margin: 0 auto; padding: 40px 20px; background: #0a0a0b;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #e87fa0; font-size: 28px; margin: 0;">scars.meow</h1>
+            <h1 style="color: #e87fa0; font-size: 28px; margin: 0;">scarz.lol</h1>
           </div>
           <div style="background: #111113; border-radius: 12px; padding: 30px; border: 1px solid #222;">
             <h2 style="color: #fff; font-size: 18px; margin: 0 0 12px 0;">${heading}</h2>
@@ -106,7 +106,7 @@ export async function sendCodeEmail({ to, username, code, context }: SendCodeArg
             </p>
           </div>
           <p style="color: #555; font-size: 11px; text-align: center; margin-top: 24px;">
-            Sent by scars.meow - do not reply to this email.
+            Sent by scarz.lol - do not reply to this email.
           </p>
         </div>
       `,
@@ -121,4 +121,5 @@ export async function sendCodeEmail({ to, username, code, context }: SendCodeArg
     return { ok: false, error: 'Email send failed' }
   }
 }
+
 

@@ -25,7 +25,7 @@ async function sendWebhook(embeds: WebhookEmbed[]) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        username: 'scars.meow',
+        username: 'scarz.lol',
         // Defence-in-depth: every caller of this helper currently
         // passes pre-validated input (usernames matching ^[a-z0-9_]+$,
         // numeric counts, etc.), but Discord webhooks honour
@@ -38,7 +38,7 @@ async function sendWebhook(embeds: WebhookEmbed[]) {
         embeds: embeds.map(e => ({
           ...e,
           timestamp: e.timestamp || new Date().toISOString(),
-          footer: e.footer || { text: 'scars.meow' },
+          footer: e.footer || { text: 'scarz.lol' },
         })),
       }),
     })
@@ -94,4 +94,5 @@ export async function logPremiumActivated(username: string) {
     fields: [{ name: 'Status', value: 'Active', inline: true }],
   }])
 }
+
 

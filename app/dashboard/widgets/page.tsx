@@ -245,7 +245,7 @@ export default function WidgetsPage() {
   const [displayMode, setDisplayMode] = useState<string>('carousel')
   const [pickerOpen, setPickerOpen] = useState(false)
   // Tracks any Discord widget the user has configured whose Discord
-  // user_id isn't being tracked by the bot (= user isn't in scars.meow's
+  // user_id isn't being tracked by the bot (= user isn't in scarz.lol's
   // Discord server). When non-null, the banner at the top of the page
   // renders, nudging them to join. Null = no Discord widget, or it
   // is tracked.
@@ -269,7 +269,7 @@ export default function WidgetsPage() {
 
   // Whenever the widget list changes, look for a Discord widget and
   // probe /api/discord-presence/[userId] to see if the bot is tracking
-  // it. A 404 means the user isn't in scars.meow's Discord server, in
+  // it. A 404 means the user isn't in scarz.lol's Discord server, in
   // which case we surface the banner. We only check the first Discord
   // widget - users can only have one of each type anyway.
   useEffect(() => {
@@ -417,7 +417,7 @@ export default function WidgetsPage() {
     <div className="space-y-5">
       {/* Discord widget nag banner. Renders only when the user has a
           Discord widget configured AND the bot can't see their
-          presence yet (= they're not in scars.meow's Discord server). */}
+          presence yet (= they're not in scarz.lol's Discord server). */}
       {discordUntrackedId && (
         <div className="rounded-3xl border border-amber-500/30 bg-gradient-to-br from-amber-500/[0.08] to-amber-500/[0.02] p-4 sm:p-5">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
@@ -429,7 +429,7 @@ export default function WidgetsPage() {
                 Your Discord widget isn&apos;t working
               </p>
               <p className="mt-0.5 text-xs leading-relaxed text-foreground-secondary">
-                scars.meow tracks Discord status through our own bot inside the scars.meow Discord server. You&apos;re not in the server yet, so your widget can&apos;t show your live status. Join in 5 seconds to fix it.
+                scarz.lol tracks Discord status through our own bot inside the scarz.lol Discord server. You&apos;re not in the server yet, so your widget can&apos;t show your live status. Join in 5 seconds to fix it.
               </p>
             </div>
             <a
@@ -618,9 +618,9 @@ export default function WidgetsPage() {
                       <div className="flex gap-3">
                         <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#5865F2]/30 text-[10px] font-bold text-[#5865F2]">1</div>
                         <div className="space-y-1.5">
-                          <p className="text-xs font-medium text-foreground">Join the scars.meow Discord server</p>
+                          <p className="text-xs font-medium text-foreground">Join the scarz.lol Discord server</p>
                           <p className="text-xs leading-relaxed text-muted-foreground">
-                            We track your presence only while you&apos;re a member of scars.meow&apos;s server.
+                            We track your presence only while you&apos;re a member of scarz.lol&apos;s server.
                           </p>
                           <a
                             href="https://discord.gg/NgVh45gXbD"
@@ -707,4 +707,5 @@ export default function WidgetsPage() {
     </div>
   )
 }
+
 

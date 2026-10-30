@@ -2,7 +2,7 @@ import { SOCIAL_PLATFORMS } from './types'
 
 // Allowed domains for media uploads
 export const ALLOWED_MEDIA_DOMAINS = [
-  'scars.meow',
+  'scarz.lol',
   'blob.vercel-storage.com',
   'public.blob.vercel-storage.com',
   // Apple media CDNs used by the music quick-import: cover art lives on
@@ -49,8 +49,8 @@ function isSafeRelativeMediaUrl(url: string): boolean {
 //      values containing CSS-breaking chars - stops the background_url
 //      CSS-injection vector.
 //   2. Absolute URLs use a strict hostname-suffix check (NOT a substring
-//      check). `evil.scars.meow.attacker.com` is rejected because it
-//      neither equals nor ends with `.scars.meow`.
+//      check). `evil.scarz.lol.attacker.com` is rejected because it
+//      neither equals nor ends with `.scarz.lol`.
 export function isAllowedMediaUrl(url: string): boolean {
   if (typeof url !== 'string' || url.length === 0) return false
   // Reject any URL whose raw text contains CSS/HTML breakout characters. These
@@ -185,4 +185,5 @@ export function extractUsername(url: string, platform: string): string {
   }
   return url
 }
+
 

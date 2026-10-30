@@ -61,7 +61,7 @@ export async function POST(request: Request) {
 
     console.log('[Login Resend] Sending verification email to:', pending.email)
     const emailResult = await resend.emails.send({
-      from: 'Halo <noreply@scars.meow>',
+      from: 'Halo <noreply@scarz.lol>',
       to: pending.email,
       subject: 'Login Verification - Halo',
       html: `
@@ -97,4 +97,5 @@ export async function POST(request: Request) {
     )
   }
 }
+
 

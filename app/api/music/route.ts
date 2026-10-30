@@ -111,8 +111,8 @@ export async function POST(request: Request) {
     // Use the shared isAllowedMediaUrl helper which does proper
     // hostname-suffix matching. The old inline check used
     // `track_url.includes(domain)` which is substring-matching, so
-    // URLs like https://attacker.com/scars.meow/evil.mp3 or
-    // https://scars.meow.attacker.com/x.mp3 both passed the check.
+    // URLs like https://attacker.com/scarz.lol/evil.mp3 or
+    // https://scarz.lol.attacker.com/x.mp3 both passed the check.
     // The shared helper rejects both via new URL(...).hostname checks.
     if (!isAllowedMediaUrl(track_url)) {
       return NextResponse.json({
@@ -356,4 +356,5 @@ export async function DELETE(request: Request) {
     return NextResponse.json({ error: "Failed to delete track" }, { status: 500 })
   }
 }
+
 

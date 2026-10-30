@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { IconArrowLeft } from '@tabler/icons-react'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | scars.meow',
-  description: 'Terms of Service for scars.meow',
+  title: 'Terms of Service | scarz.lol',
+  description: 'Terms of Service for scarz.lol',
 }
 
 export default function TermsOfService() {
@@ -14,7 +14,7 @@ export default function TermsOfService() {
         <Link
           href="/"
           className="font-display text-lg font-semibold tracking-tight"
-          aria-label="scars.meow home"
+          aria-label="scarz.lol home"
         >
           <span className="text-foreground">scars</span>
           <span className="text-primary">.meow</span>
@@ -41,7 +41,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-h3 font-display text-foreground">1. Acceptance of Terms</h2>
               <p className="mt-4">
-                By accessing or using scars.meow (&quot;the Service&quot;), you agree to be bound by these Terms of Service.
+                By accessing or using scarz.lol (&quot;the Service&quot;), you agree to be bound by these Terms of Service.
                 If you do not agree to these terms, please do not use the Service.
               </p>
             </section>
@@ -49,7 +49,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-h3 font-display text-foreground">2. Description of Service</h2>
               <p className="mt-4">
-                scars.meow is a profile customization platform that allows users to create and share personalized profile pages.
+                scarz.lol is a profile customization platform that allows users to create and share personalized profile pages.
                 The Service includes features for customizing appearance, adding social links, music, and other content.
               </p>
             </section>
@@ -103,7 +103,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-h3 font-display text-foreground">7. Content Ownership</h2>
               <p className="mt-4">
-                You retain ownership of content you upload. By uploading content, you grant scars.meow a
+                You retain ownership of content you upload. By uploading content, you grant scarz.lol a
                 non-exclusive license to display and distribute that content as part of the Service.
               </p>
             </section>
@@ -128,7 +128,7 @@ export default function TermsOfService() {
             <section>
               <h2 className="text-h3 font-display text-foreground">10. Limitation of Liability</h2>
               <p className="mt-4">
-                IN NO EVENT SHALL scars.meow BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
+                IN NO EVENT SHALL scarz.lol BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
                 OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OF THE SERVICE.
               </p>
             </section>
@@ -163,4 +163,5 @@ export default function TermsOfService() {
     </div>
   )
 }
+
 

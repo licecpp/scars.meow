@@ -30,8 +30,8 @@ export async function POST(request: Request) {
 
     // To clear a cookie reliably we need to match the (path, domain)
     // tuple it was set with. lib/create-session.ts sets session cookies
-    // with Domain=.scars.meow in production so the cookie reaches both
-    // scars.meow and any subdomain - match that here, else the browser
+    // with Domain=.scarz.lol in production so the cookie reaches both
+    // scarz.lol and any subdomain - match that here, else the browser
     // keeps the original domain-scoped cookie around and the user
     // stays "logged in" until it expires naturally.
     //
@@ -44,8 +44,8 @@ export async function POST(request: Request) {
       const appUrl = process.env.NEXT_PUBLIC_APP_URL || ''
       if (appUrl) {
         const host = new URL(appUrl).hostname
-        if (host === 'scars.meow' || host.endsWith('.scars.meow')) {
-          domain = '.scars.meow'
+        if (host === 'scarz.lol' || host.endsWith('.scarz.lol')) {
+          domain = '.scarz.lol'
         }
       }
     } catch { /* host-only clear is enough in dev */ }
@@ -63,4 +63,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 })
   }
 }
+
 

@@ -103,7 +103,23 @@
   color: var(--pink);
 }
 
+.halo-theme .logo-scarz {
+  color: var(--white);
+}
+
+.halo-theme .logo-dot {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.halo-theme .logo-lol {
+  color: var(--destructive);
+}
+
 .halo-theme .nav-divider {
+  color: rgba(255, 255, 255, 0.12);
+  font-size: 0.85rem;
+  user-select: none;
+}
   color: rgba(255, 255, 255, 0.12);
   font-size: 0.85rem;
   user-select: none;

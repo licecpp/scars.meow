@@ -197,9 +197,9 @@ async function fetchWeather(location: string) {
 }
 
 async function fetchDiscord(userId: string) {
-  // scars.meow's in-house Lanyard replacement. The Discord bot writes
+  // scarz.lol's in-house Lanyard replacement. The Discord bot writes
   // presenceUpdate snapshots to public.discord_presence; we read
-  // straight from that table here. Users must be in scars.meow's main
+  // straight from that table here. Users must be in scarz.lol's main
   // Discord server (discord.gg/NgVh45gXbD) for the bot to see their
   // presence and create a row.
   //
@@ -216,7 +216,7 @@ async function fetchDiscord(userId: string) {
 
   if (error) throw new Error(`Presence lookup failed: ${error.message}`)
   if (!row) {
-    throw new Error('Not in scars.meow Discord, join discord.gg/NgVh45gXbD')
+    throw new Error('Not in scarz.lol Discord, join discord.gg/NgVh45gXbD')
   }
 
   const d = row.discord_user as {
@@ -454,7 +454,7 @@ async function fetchTracker(profileUrl: string) {
       // Some Cloudflare-fronted endpoints reject requests without a
       // realistic User-Agent. Without this, tracker.gg has been known
       // to return 401 / 403 even with a valid key.
-      'User-Agent': 'scars.meow-widget/1.0 (+https://scars.meow)',
+      'User-Agent': 'scarz.lol-widget/1.0 (+https://scarz.lol)',
     },
     next: { revalidate: 60 },
   })
@@ -552,7 +552,7 @@ async function fetchSpotify(rawUrl: string) {
 // ─── Minecraft (playerdb.co, keyless) ───────────────────────────────
 async function fetchMinecraft(username: string) {
   const data = await fetchJson(`https://playerdb.co/api/player/minecraft/${encodeURIComponent(username)}`, {
-    headers: { 'User-Agent': 'scars.meow-widget/1.0 (+https://scars.meow)' },
+    headers: { 'User-Agent': 'scarz.lol-widget/1.0 (+https://scarz.lol)' },
   })
   const p = data?.data?.player
   if (!p?.id) throw new Error('Player not found')
@@ -612,7 +612,7 @@ async function fetchOverwatch(battletag: string) {
 // ─── Genshin Impact (enka.network, keyless) ─────────────────────────
 async function fetchGenshin(uid: string) {
   const data = await fetchJson(`https://enka.network/api/uid/${encodeURIComponent(uid)}`, {
-    headers: { 'User-Agent': 'scars.meow-widget/1.0 (+https://scars.meow)' },
+    headers: { 'User-Agent': 'scarz.lol-widget/1.0 (+https://scarz.lol)' },
   })
   const p = data?.playerInfo
   if (!p) throw new Error('Player not found')
@@ -674,7 +674,7 @@ async function fetchYouTube(channelId: string) {
 async function fetchPinterest(username: string) {
   const clean = username.replace(/^@/, '')
   const xml = await fetchText(`https://www.pinterest.com/${encodeURIComponent(clean)}/feed.rss`, {
-    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; scars.meow-widget/1.0)' },
+    headers: { 'User-Agent': 'Mozilla/5.0 (compatible; scarz.lol-widget/1.0)' },
   }).catch(() => '')
   const pins: { title: string; image: string | null; link: string | null }[] = []
   const items = xml.split('<item>').slice(1, 7)
@@ -848,4 +848,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: error.message || 'Failed to fetch widget data' }, { status: 400 })
   }
 }
+
 

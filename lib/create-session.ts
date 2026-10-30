@@ -31,10 +31,10 @@ export async function createSessionResponse(
     // Don't block login on DB write error - but log it
   }
 
-  // Cookie domain: scope session cookies to `.scars.meow` in production
-  // so they're sent to BOTH scars.meow and any subdomain (e.g. the
-  // legacy www.scars.meow). Without this the cookies were host-only -
-  // logging in on scars.meow left no session on www.scars.meow and vice
+  // Cookie domain: scope session cookies to `.scarz.lol` in production
+  // so they're sent to BOTH scarz.lol and any subdomain (e.g. the
+  // legacy www.scarz.lol). Without this the cookies were host-only -
+  // logging in on scarz.lol left no session on www.scarz.lol and vice
   // versa, which broke users whose browser autocompleted to the www
   // form. The middleware redirects www → apex on top of this so the
   // two layers cover each other: even if a stray request hits www
@@ -42,14 +42,14 @@ export async function createSessionResponse(
   // the cookie still applies.
   //
   // Derive the host from VPS_URL/NEXT_PUBLIC_APP_URL so local dev and
-  // preview deploys (where the host isn't scars.meow) stay host-only.
+  // preview deploys (where the host isn't scarz.lol) stay host-only.
   let domain: string | undefined
   try {
     const appUrl = process.env.NEXT_PUBLIC_APP_URL || ''
     if (appUrl) {
       const host = new URL(appUrl).hostname
-      if (host === 'scars.meow' || host.endsWith('.scars.meow')) {
-        domain = '.scars.meow'
+      if (host === 'scarz.lol' || host.endsWith('.scarz.lol')) {
+        domain = '.scarz.lol'
       }
     }
   } catch {
@@ -71,4 +71,5 @@ export async function createSessionResponse(
   res.cookies.set('session_created_at', new Date().toISOString(), cookieOpts)
   return res
 }
+
 

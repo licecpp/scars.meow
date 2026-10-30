@@ -12,7 +12,7 @@ export const meta = { permission: 'public', rateLimit: 'public' }
 // 24h breakdowns. Just headline numbers the community can see.
 export const data = new SlashCommandBuilder()
   .setName('halo')
-  .setDescription('Public scars.meow platform stats')
+  .setDescription('Public scarz.lol platform stats')
 
 export async function execute(interaction) {
   await interaction.deferReply()
@@ -32,15 +32,15 @@ export async function execute(interaction) {
     return interaction.editReply({
       embeds: [new EmbedBuilder()
         .setColor(BRAND_COLOR)
-        .setTitle('scars.meow')
-        .setURL('https://scars.meow')
+        .setTitle('scarz.lol')
+        .setURL('https://scarz.lol')
         .setDescription('Customizable profile pages with effects, music, links, and more.')
         .addFields(
           { name: '👥 Public profiles', value: totalUsers.toLocaleString(), inline: true },
           { name: '⭐ Premium users',   value: `${premiumUsers.toLocaleString()} (${premiumPct}%)`, inline: true },
           { name: '👁️ Total views',    value: totalViews.toLocaleString(), inline: true },
         )
-        .setFooter({ text: 'scars.meow · build your perfect profile' })
+        .setFooter({ text: 'scarz.lol · build your perfect profile' })
         .setTimestamp()],
     })
   } catch (err) {
@@ -48,4 +48,5 @@ export async function execute(interaction) {
     return interaction.editReply({ embeds: [errorEmbed('Error', 'Failed to fetch stats.')] })
   }
 }
+
 

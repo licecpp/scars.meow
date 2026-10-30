@@ -28,13 +28,13 @@ export async function GET(request: Request) {
 
   const state = randomBytes(16).toString('hex')
   // Use NEXT_PUBLIC_APP_URL if set, otherwise derive from forwarded host (Railway/Cloudflare)
-  // Normalise bare "scars.meow" → "www.scars.meow" so the redirect_uri matches Discord's allowlist
+  // Normalise bare "scarz.lol" → "www.scarz.lol" so the redirect_uri matches Discord's allowlist
   const appUrl = process.env.NEXT_PUBLIC_APP_URL
     || (() => {
       const fwdHost = request.headers.get('x-forwarded-host')
       const proto = request.headers.get('x-forwarded-proto') || 'https'
       if (fwdHost) {
-        const host = fwdHost === 'scars.meow' ? 'www.scars.meow' : fwdHost
+        const host = fwdHost === 'scarz.lol' ? 'www.scarz.lol' : fwdHost
         return `${proto}://${host}`
       }
       return url.origin
@@ -52,22 +52,22 @@ export async function GET(request: Request) {
   discordUrl.searchParams.set('scope', 'identify email')
   discordUrl.searchParams.set('state', `${state}:${action}`)
 
-  // Cookie needs to be valid on BOTH scars.meow (where the user starts the
-  // flow if they hit the bare domain) AND www.scars.meow (where Discord's
+  // Cookie needs to be valid on BOTH scarz.lol (where the user starts the
+  // flow if they hit the bare domain) AND www.scarz.lol (where Discord's
   // OAuth allowlist sends them on callback). Without a `domain` attribute
   // the cookie pins to whatever exact host the route was hit on, and the
   // browser refuses to send it to the other subdomain - manifests as
   // `error=discord_state_mismatch` on the callback.
   //
-  // Derive the parent domain from the normalised appUrl: any *.scars.meow
-  // host (including scars.meow itself) gets `domain: '.scars.meow'`. For
+  // Derive the parent domain from the normalised appUrl: any *.scarz.lol
+  // host (including scarz.lol itself) gets `domain: '.scarz.lol'`. For
   // local dev / preview deploys we leave domain unset so the default
   // host-only scoping kicks in.
   let cookieDomain: string | undefined
   try {
     const host = new URL(appUrl).hostname
-    if (host === 'scars.meow' || host.endsWith('.scars.meow')) {
-      cookieDomain = '.scars.meow'
+    if (host === 'scarz.lol' || host.endsWith('.scarz.lol')) {
+      cookieDomain = '.scarz.lol'
     }
   } catch {
     /* leave cookieDomain undefined */
@@ -84,4 +84,5 @@ export async function GET(request: Request) {
   })
   return response
 }
+
 

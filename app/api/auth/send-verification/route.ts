@@ -60,7 +60,7 @@ export async function POST(request: Request) {
       const resend = new Resend(process.env.RESEND_API_KEY)
       
       const resp = await resend.emails.send({
-        from: 'Halo <noreply@scars.meow>',
+        from: 'Halo <noreply@scarz.lol>',
         to: email,
         subject: 'Your verification code',
         html: `
@@ -89,4 +89,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Failed to send verification code' }, { status: 500 })
   }
 }
+
 

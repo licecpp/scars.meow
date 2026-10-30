@@ -23,7 +23,7 @@ export function DashboardHeader({ profile, onMenuClick }: DashboardHeaderProps) 
   const router = useRouter()
   
   const handleLogout = async () => {
-    // scars.meow uses custom session cookies (set by /api/auth/login/verify
+    // scarz.lol uses custom session cookies (set by /api/auth/login/verify
     // and friends), NOT Supabase Auth. Calling supabase.auth.signOut()
     // here was leftover from an old auth model: it cleared a session
     // that didn't exist, so the actual halo session_token cookie was
@@ -112,4 +112,5 @@ export function DashboardHeader({ profile, onMenuClick }: DashboardHeaderProps) 
     </header>
   )
 }
+
 

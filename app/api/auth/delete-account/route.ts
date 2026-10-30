@@ -106,15 +106,15 @@ export async function DELETE(request: NextRequest) {
 
     // Clear cookies - match the (path, domain) tuple used by
     // lib/create-session.ts. Issue both a host-only and a
-    // Domain=.scars.meow clear so any legacy host-only cookies still
+    // Domain=.scarz.lol clear so any legacy host-only cookies still
     // around from before the Domain switch also go away.
     let cookieDomain: string | undefined
     try {
       const appUrl = process.env.NEXT_PUBLIC_APP_URL || ''
       if (appUrl) {
         const host = new URL(appUrl).hostname
-        if (host === 'scars.meow' || host.endsWith('.scars.meow')) {
-          cookieDomain = '.scars.meow'
+        if (host === 'scarz.lol' || host.endsWith('.scarz.lol')) {
+          cookieDomain = '.scarz.lol'
         }
       }
     } catch { /* host-only clear is enough in dev */ }
@@ -132,4 +132,5 @@ export async function DELETE(request: NextRequest) {
     return NextResponse.json({ error: 'Failed to delete account' }, { status: 500 })
   }
 }
+
 

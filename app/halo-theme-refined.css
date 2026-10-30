@@ -129,14 +129,19 @@
   font-family: var(--r-font-display) !important;
   font-weight: 700 !important;
 }
-.halo-theme .logo-rip {
-  background: linear-gradient(180deg, #f290b0 0%, #d64f4f 100%);
+.halo-theme .logo-scarz {
+  color: var(--r-text) !important;
+}
+
+.halo-theme .logo-dot {
+  color: var(--r-text-faint) !important;
+}
+
+.halo-theme .logo-lol {
+  background: linear-gradient(180deg, #f290b0 0%, #ef4444 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.halo-theme .logo-dot {
-  color: var(--r-text-faint) !important;
 }
 
 /* ──────── Buttons: smaller radius, restrained ──────── */

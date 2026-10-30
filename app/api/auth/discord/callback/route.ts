@@ -12,11 +12,11 @@ function getAppUrl(request: Request): string {
   // 1. Explicit env var always wins
   if (process.env.NEXT_PUBLIC_APP_URL) return process.env.NEXT_PUBLIC_APP_URL
   // 2. Railway/Cloudflare sets x-forwarded-host to the public hostname
-  // Normalise: strip bare "scars.meow" → "www.scars.meow" so the redirect lands correctly
+  // Normalise: strip bare "scarz.lol" → "www.scarz.lol" so the redirect lands correctly
   const fwdHost = request.headers.get('x-forwarded-host')
   const proto = request.headers.get('x-forwarded-proto') || 'https'
   if (fwdHost) {
-    const host = fwdHost === 'scars.meow' ? 'www.scars.meow' : fwdHost
+    const host = fwdHost === 'scarz.lol' ? 'www.scarz.lol' : fwdHost
     return `${proto}://${host}`
   }
   // 3. Last resort: use request origin (works in local dev)
@@ -29,7 +29,7 @@ function getAppUrl(request: Request): string {
 function stateCookieDomain(appUrl: string): string | undefined {
   try {
     const host = new URL(appUrl).hostname
-    if (host === 'scars.meow' || host.endsWith('.scars.meow')) return '.scars.meow'
+    if (host === 'scarz.lol' || host.endsWith('.scarz.lol')) return '.scarz.lol'
   } catch {}
   return undefined
 }
@@ -66,9 +66,9 @@ async function sessionRedirect(
     user_agent: request.headers.get('user-agent') ?? null,
   })
 
-  // Scope session cookies to .scars.meow (matching the state cookie
-  // and lib/create-session.ts) so they're valid on both scars.meow and
-  // www.scars.meow. Without this, the Discord-OAuth callback redirected
+  // Scope session cookies to .scarz.lol (matching the state cookie
+  // and lib/create-session.ts) so they're valid on both scarz.lol and
+  // www.scarz.lol. Without this, the Discord-OAuth callback redirected
   // users to /dashboard with cookies pinned to whichever host the
   // callback ran on, and they'd get logged out the moment they
   // navigated to the other host.
@@ -366,4 +366,5 @@ export async function GET(request: Request) {
 
   return sessionRedirect(appUrl, profile.id, request)
 }
+
 

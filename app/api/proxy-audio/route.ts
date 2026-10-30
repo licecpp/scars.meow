@@ -65,7 +65,7 @@ export async function GET(request: Request) {
         return new NextResponse('Redirected to disallowed domain', { status: 403 })
       }
       const res = await fetch(currentUrl, {
-        headers: { 'User-Agent': 'scars.meow (+https://scars.meow)', 'Accept': 'audio/*,*/*;q=0.8' },
+        headers: { 'User-Agent': 'scarz.lol (+https://scarz.lol)', 'Accept': 'audio/*,*/*;q=0.8' },
         cache: 'no-store',
         redirect: 'manual',
         signal: AbortSignal.timeout(12000),
@@ -128,4 +128,5 @@ export async function GET(request: Request) {
     return new NextResponse('Proxy error', { status: 502 })
   }
 }
+
 
