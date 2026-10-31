@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;700&family=Roboto:wght@400;700&family=Source+Sans+3:wght@400;700&family=Quicksand:wght@400;700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -60,6 +61,12 @@
   --radius: 0.875rem;
 
   /* ── Type families ── */
+  --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-space-mono: 'Space Mono', monospace;
+  --font-roboto: 'Roboto', system-ui, sans-serif;
+  --font-source-sans-3: 'Source Sans 3', system-ui, sans-serif;
+  --font-quicksand: 'Quicksand', system-ui, sans-serif;
   --font-display: var(--font-space-grotesk), 'Space Grotesk', system-ui, sans-serif;
 
   /* ── Motion ── */

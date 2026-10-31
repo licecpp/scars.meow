@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Space_Mono, Space_Grotesk, Roboto, Source_Sans_3, Quicksand } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
@@ -7,42 +6,12 @@ import { AccountStatusGuard } from '@/components/app/account-status-guard'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/next'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
-
-const spaceMono = Space_Mono({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-space-mono',
-})
-
-// Display family for headings + the halo wordmark. A geometric grotesk gives
-// the headline type its own voice, distinct from Inter on body/UI copy.
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  weight: ['500', '600', '700'],
-  variable: '--font-space-grotesk',
-})
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '700', '900'],
-  variable: '--font-roboto',
-})
-
-const sourceSans3 = Source_Sans_3({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-source-sans-3',
-})
-
-const quicksand = Quicksand({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-quicksand',
-})
+const inter = null
+const spaceMono = null
+const spaceGrotesk = null
+const roboto = null
+const sourceSans3 = null
+const quicksand = null
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -109,7 +78,7 @@ export default function RootLayout({
         />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
       </head>
-      <body className={`${inter.variable} ${spaceMono.variable} ${spaceGrotesk.variable} ${roboto.variable} ${sourceSans3.variable} ${quicksand.variable} font-sans antialiased`}>
+      <body className={`font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark" enableSystem={false}>
           <AccountStatusGuard />
           {children}
