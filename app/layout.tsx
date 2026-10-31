@@ -4,7 +4,11 @@ import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import { AccountStatusGuard } from '@/components/app/account-status-guard'
+vercel/install-and-configure-vercel-s-scbbiw
 import { SpeedInsights } from '@vercel/speed-insights/next'
+=======
+import { Analytics } from '@vercel/analytics/next'
+main
 
 const inter = Inter({
   subsets: ['latin'],
@@ -114,10 +118,12 @@ export default function RootLayout({
           {children}
           <Toaster richColors closeButton position="top-right" />
         </ThemeProvider>
+vercel/install-and-configure-vercel-s-scbbiw
         <SpeedInsights />
+=======
+        <Analytics />
+main
       </body>
     </html>
   )
 }
-
-

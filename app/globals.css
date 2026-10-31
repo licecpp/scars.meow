@@ -25,8 +25,8 @@
   --primary-foreground: #1a0810;
   --accent: #ef4444;
   --accent-foreground: #1a0810;
-  --accent-soft: rgba(232, 127, 160, 0.12);
-  --accent-ring: rgba(232, 127, 160, 0.42);
+  --accent-soft: rgba(239, 68, 68, 0.12);
+  --accent-ring: rgba(239, 68, 68, 0.42);
 
   /* ── Feedback ── */
   --destructive: #e5484d;
@@ -56,7 +56,7 @@
   --sidebar-ring: #ef4444;
 
   /* ── Misc ── */
-  --glow: rgba(232, 127, 160, 0.35);
+  --glow: rgba(239, 68, 68, 0.35);
   --radius: 0.875rem;
 
   /* ── Type families ── */
@@ -89,8 +89,8 @@
   --primary-foreground: #1a0810;
   --accent: #ef4444;
   --accent-foreground: #1a0810;
-  --accent-soft: rgba(232, 127, 160, 0.12);
-  --accent-ring: rgba(232, 127, 160, 0.42);
+  --accent-soft: rgba(239, 68, 68, 0.12);
+  --accent-ring: rgba(239, 68, 68, 0.42);
   --destructive: #e5484d;
   --destructive-foreground: #f4f4f7;
   --border: rgba(255, 255, 255, 0.07);
@@ -110,7 +110,7 @@
   --sidebar-accent-foreground: #f4f4f7;
   --sidebar-border: rgba(255, 255, 255, 0.06);
   --sidebar-ring: #ef4444;
-  --glow: rgba(232, 127, 160, 0.35);
+  --glow: rgba(239, 68, 68, 0.35);
   --radius: 0.875rem;
 }
 
@@ -330,7 +330,7 @@ svg {
   background-clip: padding-box;
   transition: background 200ms ease;
 }
-::-webkit-scrollbar-thumb:hover { background: rgba(232, 127, 160, 0.35); background-clip: padding-box; border: 2px solid transparent; }
+::-webkit-scrollbar-thumb:hover { background: rgba(239, 68, 68, 0.35); background-clip: padding-box; border: 2px solid transparent; }
 
 * { transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter; transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1); transition-duration: 180ms; }
 
@@ -341,7 +341,7 @@ input, textarea, select { transition-duration: 140ms; }
 /* Focus ring polish - softer & accent-tinted */
 :focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(232, 127, 160, 0.45), 0 0 0 4px rgba(232, 127, 160, 0.12);
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.45), 0 0 0 4px rgba(239, 68, 68, 0.12);
   border-radius: 0.5rem;
 }
 
@@ -640,3 +640,4 @@ button, [role="button"], a, input, select, textarea { touch-action: manipulation
   .ds-enter { opacity: 1; transform: none; }
   .lift:hover { transform: none; }
 }
+
