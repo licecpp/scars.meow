@@ -20,7 +20,7 @@ export async function FeaturedProfile() {
 
   const displayName =
     profile.display_name && profile.display_name.trim() ? profile.display_name : profile.username
-  const accent = profile.accent_color || '#e87fa0'
+  const accent = profile.accent_color || '#ef4444'
   const initial = (displayName || '?')[0]?.toUpperCase() ?? '?'
 
   return (
@@ -57,3 +57,4 @@ export async function FeaturedProfile() {
     </Link>
   )
 }
+

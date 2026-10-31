@@ -195,7 +195,7 @@ const WIDGET_TYPES = [
   { id: 'spotify',        name: 'Spotify',          desc: 'Embed any track, album, playlist or artist',     color: '#1DB954', fields: [{ key: 'url', label: 'Spotify link', placeholder: 'https://open.spotify.com/track/...' }] },
   { id: 'minecraft',      name: 'Minecraft',        desc: 'Show your Minecraft skin + username',            color: '#5FA44B', fields: [{ key: 'username', label: 'Username', placeholder: 'Notch' }] },
   { id: 'time',           name: 'Time',             desc: 'A live clock in any timezone',                   color: '#60A5FA', fields: [{ key: 'timezone', label: 'Timezone (IANA)', placeholder: 'America/New_York' }, { key: 'label', label: 'Label (optional)', placeholder: 'My time', optional: true }] },
-  { id: 'custom',         name: 'Custom',           desc: 'Your own title, text, image and link',           color: '#E87FA0', fields: [{ key: 'title', label: 'Title', placeholder: 'My link' }, { key: 'subtitle', label: 'Subtitle (optional)', placeholder: 'Short description', optional: true }, { key: 'imageUrl', label: 'Image URL (optional)', placeholder: 'https://...', optional: true }, { key: 'link', label: 'Link (optional)', placeholder: 'https://...', optional: true }] },
+  { id: 'custom',         name: 'Custom',           desc: 'Your own title, text, image and link',           color: '#ef4444', fields: [{ key: 'title', label: 'Title', placeholder: 'My link' }, { key: 'subtitle', label: 'Subtitle (optional)', placeholder: 'Short description', optional: true }, { key: 'imageUrl', label: 'Image URL (optional)', placeholder: 'https://...', optional: true }, { key: 'link', label: 'Link (optional)', placeholder: 'https://...', optional: true }] },
   { id: 'twitch',         name: 'Twitch',           desc: 'Followers + current stream',                     color: '#9146FF', fields: [{ key: 'username', label: 'Channel', placeholder: 'ninja' }] },
   { id: 'youtube',        name: 'YouTube',          desc: 'Channel + latest video',                         color: '#FF0000', fields: [{ key: 'channelId', label: 'Channel ID (UC...)', placeholder: 'UCxxxxxxxxxxxx' }] },
   { id: 'statsfm',        name: 'stats.fm',         desc: 'Now playing + recent tracks',                    color: '#1ED760', fields: [{ key: 'username', label: 'Username', placeholder: 'yourname' }] },
@@ -707,5 +707,6 @@ export default function WidgetsPage() {
     </div>
   )
 }
+
 
 

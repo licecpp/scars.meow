@@ -334,7 +334,7 @@ export const SOCIAL_PLATFORMS = [
   // doesn't need a urlTemplate. Pink because that's the site brand color
   // - the tile in the grid uses the Globe2 lucide icon directly, not the
   // SocialIcon component, so the 'icon' field here is just a placeholder.
-  { id: 'custom', name: 'Custom Link', icon: 'globe', color: '#e87fa0', urlTemplate: null, placeholder: 'https://example.com' },
+  { id: 'custom', name: 'Custom Link', icon: 'globe', color: '#ef4444', urlTemplate: null, placeholder: 'https://example.com' },
 ] as const
 
 
@@ -385,3 +385,4 @@ export interface InboxMessage {
   created_at?: string
   read_at?: string | null
 }
+

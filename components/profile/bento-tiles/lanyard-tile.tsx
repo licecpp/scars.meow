@@ -82,7 +82,7 @@ export function LanyardTile({ discordId }: { discordId: string | null | undefine
   if (errMsg === 'not-linked') {
     return (
       <div className="flex h-full flex-col items-center justify-center text-center">
-        <p className="text-xs font-semibold uppercase tracking-wider text-[#e87fa0]/80">Discord Presence</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-[#ef4444]/80">Discord Presence</p>
         <p className="mt-1 text-[10px] text-white/40">Connect Discord in Settings</p>
       </div>
     )
@@ -90,7 +90,7 @@ export function LanyardTile({ discordId }: { discordId: string | null | undefine
   if (errMsg && !data) {
     return (
       <div className="flex h-full flex-col items-center justify-center text-center">
-        <p className="text-xs font-semibold uppercase tracking-wider text-[#e87fa0]/80">Discord Presence</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-[#ef4444]/80">Discord Presence</p>
         <p className="mt-1 text-[10px] text-white/40">Join discord.gg/lanyard to enable</p>
       </div>
     )
@@ -98,7 +98,7 @@ export function LanyardTile({ discordId }: { discordId: string | null | undefine
   if (!data) {
     return (
       <div className="flex h-full items-center justify-center">
-        <div className="h-6 w-6 animate-spin rounded-full border-2 border-white/10 border-t-[#e87fa0]" />
+        <div className="h-6 w-6 animate-spin rounded-full border-2 border-white/10 border-t-[#ef4444]" />
       </div>
     )
   }
@@ -230,3 +230,4 @@ export function SpotifyTile({ discordId }: { discordId: string | null | undefine
     </div>
   )
 }
+

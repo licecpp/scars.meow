@@ -35,7 +35,7 @@ export interface LayoutMeta {
    pills, links/buttons = rounded rects.
    ─────────────────────────────────────────────────────────────────── */
 
-const PINK = '#e87fa0'
+const PINK = '#ef4444'
 const PINK_FAINT = 'rgba(232,127,160,0.35)'
 const WHITE_FAINT = 'rgba(255,255,255,0.45)'
 
@@ -99,3 +99,4 @@ export const LAYOUT_META: LayoutMeta[] = [
 export function getLayoutMeta(id: string | null | undefined): LayoutMeta {
   return LAYOUT_META.find((m) => m.id === id) ?? LAYOUT_META[0]
 }
+

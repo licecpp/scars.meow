@@ -79,7 +79,7 @@ export function MobileNav({ username }: { username?: string | null }) {
         .nav-mobile-menu { position: absolute; top: 52px; right: 0; min-width: 190px; display: flex; flex-direction: column; gap: 2px; padding: 8px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); background: rgba(14,11,17,0.97); backdrop-filter: blur(18px); box-shadow: 0 18px 44px -14px rgba(0,0,0,0.75); z-index: 60; }
         .nav-mobile-link { display: block; padding: 11px 13px; border-radius: 10px; color: rgba(255,255,255,0.82); font-size: 15px; text-decoration: none; }
         .nav-mobile-link:hover { background: rgba(255,255,255,0.07); color: #fff; }
-        .nav-mobile-link-accent { color: #e87fa0; }
+        .nav-mobile-link-accent { color: #ef4444; }
         .nav-mobile-divider { height: 1px; margin: 6px 4px; background: rgba(255,255,255,0.1); }
         @media (max-width: 640px) {
           .nav-mobile { display: block; position: relative; }
@@ -89,3 +89,4 @@ export function MobileNav({ username }: { username?: string | null }) {
     </div>
   )
 }
+

@@ -126,10 +126,10 @@ export function EnhancedAppearanceEditor({ profile, onChange, isPremium = false 
   const initialDataRef = useRef<AppearanceState | null>(null)
 
   const getInitialData = (): AppearanceState => ({
-    accentColor: profile.accent_color || '#e87fa0',
+    accentColor: profile.accent_color || '#ef4444',
     textColor: profile.text_color || '#ffffff',
     backgroundColor: profile.background_color || '#080809',
-    iconColor: profile.icon_color || '#e87fa0',
+    iconColor: profile.icon_color || '#ef4444',
     fontFamily: profile.font_family || 'Inter',
     customFontUrl: profile.custom_font_url || '',
     backgroundEffect: profile.background_effect || 'none',
@@ -139,15 +139,15 @@ export function EnhancedAppearanceEditor({ profile, onChange, isPremium = false 
     profileOpacity: profile.profile_opacity ?? 100,
     profileBlur: profile.profile_blur ?? 0,
     profileGradientEnabled: profile.profile_gradient_enabled ?? false,
-    profileGradientPrimary: profile.profile_gradient_primary || '#e87fa0',
+    profileGradientPrimary: profile.profile_gradient_primary || '#ef4444',
     profileGradientSecondary: profile.profile_gradient_secondary || '#8b5cf6',
     glowUsername: profile.glow_username ?? false,
     glowSocials: profile.glow_socials ?? false,
     glowBadges: profile.glow_badges ?? false,
     glowIntensity: profile.glow_intensity ?? 50,
-    glowColor: profile.glow_color || '#e87fa0',
+    glowColor: profile.glow_color || '#ef4444',
     outlineEnabled: profile.outline_enabled ?? false,
-    outlineColor: profile.outline_color || '#e87fa0',
+    outlineColor: profile.outline_color || '#ef4444',
     outlineWidth: profile.outline_width ?? 2,
     cardStyle: profile.card_style || 'glass',
     borderStyle: profile.border_style || 'glow',
@@ -476,4 +476,5 @@ export function EnhancedAppearanceEditor({ profile, onChange, isPremium = false 
     </div>
   )
 }
+
 

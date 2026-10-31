@@ -26,7 +26,7 @@ const PLATFORM: Record<string, { label: string; color: string }> = {
   spotify:          { label: 'Spotify',   color: '#1db954' },
   minecraft:        { label: 'Minecraft', color: '#5fa44b' },
   time:             { label: 'Time',      color: '#60a5fa' },
-  custom:           { label: 'Custom',    color: '#e87fa0' },
+  custom:           { label: 'Custom',    color: '#ef4444' },
   twitch:           { label: 'Twitch',    color: '#9146ff' },
   overwatch:        { label: 'Overwatch', color: '#f99e1a' },
   genshin:          { label: 'Genshin',   color: '#4eb1e5' },
@@ -290,7 +290,7 @@ function ViewBtn({ href, label = 'View Profile', compact = false }: { href: stri
 
 // ── per-type content ──────────────────────────────────────────────────────────
 
-function WidgetBody({ type, data, displayMode, accent = '#e87fa0' }: { type: string; data: any; displayMode?: string; accent?: string }) {
+function WidgetBody({ type, data, displayMode, accent = '#ef4444' }: { type: string; data: any; displayMode?: string; accent?: string }) {
   if (!data) return null
   const isGrid = displayMode === 'grid'
   const av = isGrid ? 'h-[60px] w-[60px]' : 'h-[68px] w-[68px]'   // avatar size class
@@ -1215,7 +1215,7 @@ function WidgetCard({
   const rawAccent = widget.config?.accentColor
   const accent = (typeof rawAccent === 'string' && /^#[0-9a-fA-F]{6}$/.test(rawAccent))
     ? rawAccent
-    : (meta.color || '#e87fa0')
+    : (meta.color || '#ef4444')
 
   return (
     <div
@@ -1444,3 +1444,4 @@ export function WidgetsPanel({ userId, displayMode }: { userId: string; displayM
     </div>
   )
 }
+

@@ -43,7 +43,7 @@ export function UploadingOverlay({
       role="status"
       aria-live="polite"
     >
-      <IconLoader2 className="h-8 w-8 animate-spin text-[#e87fa0]" />
+      <IconLoader2 className="h-8 w-8 animate-spin text-[#ef4444]" />
       <p className="text-xs font-medium text-white/85">{resolvedLabel}</p>
     </div>
   )
@@ -61,7 +61,7 @@ export function UploadingPill({
 }) {
   return (
     <span
-      className="inline-flex items-center gap-1.5 text-[#e87fa0]"
+      className="inline-flex items-center gap-1.5 text-[#ef4444]"
       role="status"
       aria-live="polite"
     >
@@ -70,3 +70,4 @@ export function UploadingPill({
     </span>
   )
 }
+

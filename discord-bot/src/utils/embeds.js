@@ -1,6 +1,6 @@
 import { EmbedBuilder } from 'discord.js'
 
-export const BRAND_COLOR  = 0xe87fa0
+export const BRAND_COLOR  = 0xef4444
 export const SUCCESS_COLOR = 0x34d399
 export const ERROR_COLOR   = 0xf87171
 export const WARN_COLOR    = 0xfbbf24

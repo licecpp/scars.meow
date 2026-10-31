@@ -28,7 +28,7 @@ function parseLRC(lrc: string): Line[] {
 }
 
 export function SyncedLyrics({
-  lrc, currentTime, accentColor = '#e87fa0',
+  lrc, currentTime, accentColor = '#ef4444',
 }: {
   lrc: string
   currentTime: number
@@ -90,3 +90,4 @@ export function SyncedLyrics({
     </div>
   )
 }
+

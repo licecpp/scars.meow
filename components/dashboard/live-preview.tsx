@@ -285,7 +285,7 @@ export function LivePreview({ appearanceOverride, effectsOverride }: Props) {
   const bgColor = previewProfile.background_color || '#0a0a0f'
   const bgUrl = previewProfile.background_url
   const bgEffect = previewProfile.background_effect
-  const accentColor = previewProfile.accent_color || '#e87fa0'
+  const accentColor = previewProfile.accent_color || '#ef4444'
   const glowColor = previewProfile.glow_color || accentColor
   const bgEffectColor = (previewProfile as any).background_effect_color || null
   const bgEffectStrength = (previewProfile as any).background_effect_strength ?? 50
@@ -360,3 +360,4 @@ export function LivePreview({ appearanceOverride, effectsOverride }: Props) {
     </div>
   )
 }
+

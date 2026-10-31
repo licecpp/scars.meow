@@ -65,14 +65,14 @@ export function NewVisitorPopup({ ownerUsername }: { ownerUsername: string }) {
           <span style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 800, letterSpacing: '-0.5px' }}>
             <span style={{ color: '#fff' }}>halo</span>
             <span style={{ color: 'rgba(255,255,255,0.2)' }}>.</span>
-            <span style={{ color: '#e87fa0' }}>rip</span>
+            <span style={{ color: '#ef4444' }}>rip</span>
           </span>
         </div>
 
         {/* Headline */}
         <h2 style={{ color: '#fff', fontSize: '20px', fontWeight: 700, margin: '0 0 10px', lineHeight: 1.3 }}>
           You just found{' '}
-          <span style={{ color: '#e87fa0' }}>@{ownerUsername}</span>'s profile
+          <span style={{ color: '#ef4444' }}>@{ownerUsername}</span>'s profile
         </h2>
 
         {/* Description */}
@@ -111,7 +111,7 @@ export function NewVisitorPopup({ ownerUsername }: { ownerUsername: string }) {
               display: 'block',
               padding: '13px 20px',
               borderRadius: '14px',
-              background: 'linear-gradient(135deg, #9333ea, #e87fa0)',
+              background: 'linear-gradient(135deg, #9333ea, #ef4444)',
               color: '#fff',
               fontWeight: 700,
               fontSize: '15px',
@@ -158,5 +158,6 @@ export function NewVisitorPopup({ ownerUsername }: { ownerUsername: string }) {
     </div>
   )
 }
+
 
 

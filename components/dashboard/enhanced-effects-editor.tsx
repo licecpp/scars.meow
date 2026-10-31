@@ -120,12 +120,12 @@ export function EnhancedEffectsEditor({ profile, onChange, isPremium = false }: 
     cursorTrailEnabled: false,
     customCursorUrl: profile.custom_cursor_url || '',
     hoverCursorUrl: (profile as any).custom_cursor_hover_url || '',
-    cursorColor: profile.cursor_color || profile.accent_color || '#e87fa0',
+    cursorColor: profile.cursor_color || profile.accent_color || '#ef4444',
     cursorClickEffect: profile.cursor_click_effect || 'none',
-    cursorClickColor: profile.cursor_click_color || profile.cursor_color || profile.accent_color || '#e87fa0',
+    cursorClickColor: profile.cursor_click_color || profile.cursor_color || profile.accent_color || '#ef4444',
     tiltEffect: profile.tilt_effect ?? true,
     hoverEffect: profile.hover_effect || 'glow',
-    hoverEffectColor: profile.hover_effect_color || profile.accent_color || '#e87fa0',
+    hoverEffectColor: profile.hover_effect_color || profile.accent_color || '#ef4444',
     entranceAnimation: profile.entrance_animation || 'fade',
     showViewCount: profile.show_view_count ?? true,
     viewsLocationPosition: (profile as any).views_location_position || 'top-right',
@@ -412,3 +412,4 @@ export function EnhancedEffectsEditor({ profile, onChange, isPremium = false }: 
     </div>
   )
 }
+

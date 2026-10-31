@@ -505,7 +505,7 @@ function SlotCard({
 // Mini profile-card render driven by the preset's preview blob.
 // Used as the thumbnail on each filled slot card.
 function Thumbnail({ preview }: { preview: PresetPreview }) {
-  const accent = preview.accent_color || '#e87fa0'
+  const accent = preview.accent_color || '#ef4444'
   const bg = preview.background_color || '#0a0a0f'
   const initial = (preview.display_name || preview.username || '?')[0]?.toUpperCase() ?? '?'
   return (
@@ -671,3 +671,4 @@ function ResetDialog({
 }
 
 export { IconBookmark as ProfilePresetsIcon }
+

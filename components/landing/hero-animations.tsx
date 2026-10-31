@@ -104,7 +104,7 @@ export function FloatingProfileCard() {
         <div style={{
           height: '80px',
           borderRadius: '16px 16px 0 0',
-          background: 'linear-gradient(135deg, #f290b0 0%, #e87fa0 60%, #d66f90 100%)',
+          background: 'linear-gradient(135deg, #ef4444 0%, #ef4444 60%, #b91c1c 100%)',
           position: 'relative',
           overflow: 'hidden',
         }}>
@@ -178,7 +178,7 @@ export function FloatingProfileCard() {
           </div>
           <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
             <div style={{ width: '50px', height: '3px', borderRadius: '2px', background: 'rgba(255,255,255,0.08)', overflow: 'hidden', position: 'relative' }}>
-              <div style={{ width: '65%', height: '100%', borderRadius: '2px', background: '#e87fa0' }} />
+              <div style={{ width: '65%', height: '100%', borderRadius: '2px', background: '#ef4444' }} />
             </div>
           </div>
         </div>
@@ -285,7 +285,7 @@ export function ParallaxStars() {
         const twinkle = Math.sin(time * star.twinkleSpeed + star.twinkleOffset) * 0.3 + 0.7
         ctx.beginPath()
         ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(232, 127, 160, ${star.opacity * twinkle})`
+        ctx.fillStyle = `rgba(239, 68, 68, ${star.opacity * twinkle})`
         ctx.fill()
 
         star.y -= star.speed
@@ -308,3 +308,4 @@ export function ParallaxStars() {
 
   return <canvas ref={canvasRef} className="parallax-stars" />
 }
+

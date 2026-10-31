@@ -91,14 +91,14 @@ export async function sendCodeEmail({ to, username, code, context }: SendCodeArg
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 500px; margin: 0 auto; padding: 40px 20px; background: #0a0a0b;">
           <div style="text-align: center; margin-bottom: 30px;">
-            <h1 style="color: #e87fa0; font-size: 28px; margin: 0;">scarz.lol</h1>
+            <h1 style="color: #ef4444; font-size: 28px; margin: 0;">scarz.lol</h1>
           </div>
           <div style="background: #111113; border-radius: 12px; padding: 30px; border: 1px solid #222;">
             <h2 style="color: #fff; font-size: 18px; margin: 0 0 12px 0;">${heading}</h2>
             <p style="color: #cfcfd2; font-size: 14px; margin: 0 0 18px 0; line-height: 1.55;">
               Hey <strong>@${username}</strong>, ${intro}
             </p>
-            <div style="background: linear-gradient(135deg, #e87fa0 0%, #d66f90 100%); border-radius: 8px; padding: 20px; text-align: center; margin-bottom: 20px;">
+            <div style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); border-radius: 8px; padding: 20px; text-align: center; margin-bottom: 20px;">
               <span style="font-size: 36px; font-weight: bold; letter-spacing: 8px; color: #fff;">${code}</span>
             </div>
             <p style="color: #888; font-size: 13px; margin: 0;">
@@ -121,5 +121,6 @@ export async function sendCodeEmail({ to, username, code, context }: SendCodeArg
     return { ok: false, error: 'Email send failed' }
   }
 }
+
 
 

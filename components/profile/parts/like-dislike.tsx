@@ -19,7 +19,7 @@ export function LikeDislike({
   username,
   initialLikes = 0,
   initialDislikes = 0,
-  accentColor = '#e87fa0',
+  accentColor = '#ef4444',
   previewMode = false,
   isMobile = false,
   style,
@@ -139,3 +139,4 @@ export function LikeDislike({
     </div>
   )
 }
+

@@ -66,7 +66,7 @@ export function TemplateThumbnail({
   // a deep neutral. We rely on CSS color-mix only via opacity-suffixed hex
   // (Tailwind doesn't compile these dynamic colours), so all colours are
   // pushed through inline `style`.
-  const accentSafe = accent || '#e87fa0'
+  const accentSafe = accent || '#ef4444'
   const bgSafe = bg || '#0b0b14'
 
   return (
@@ -119,3 +119,4 @@ export function TemplateThumbnail({
     </div>
   )
 }
+

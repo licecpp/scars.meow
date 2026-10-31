@@ -3,7 +3,7 @@
 
 const WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL
 
-const BRAND_COLOR = 0xe87fa0
+const BRAND_COLOR = 0xef4444
 const SUCCESS_COLOR = 0x34d399
 const ERROR_COLOR = 0xf87171
 const WARN_COLOR = 0xfbbf24

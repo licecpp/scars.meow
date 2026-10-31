@@ -47,8 +47,8 @@ const PERIODS: { value: Period; label: string }[] = [
   { value: '90d', label: '90D' },
 ]
 
-const PINK = '#e87fa0'
-const DONUT = ['#e87fa0', '#f4abc6', '#bd5c7d', '#ffb3d2', '#8c4a64']
+const PINK = '#ef4444'
+const DONUT = ['#ef4444', '#f4abc6', '#bd5c7d', '#ffb3d2', '#8c4a64']
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 // Shared card chrome. Near-black surface a hair lighter than the page (#030306)
@@ -380,5 +380,6 @@ export function RezOverview({
     </div>
   )
 }
+
 
 

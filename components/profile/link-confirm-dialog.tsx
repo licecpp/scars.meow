@@ -94,7 +94,7 @@ export function LinkConfirmDialog({
             type="button"
             onClick={onConfirm}
             autoFocus
-            className="rounded-full bg-[#e87fa0] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#d66f90] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e87fa0]/60"
+            className="rounded-full bg-[#ef4444] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#b91c1c] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ef4444]/60"
           >
             Visit
           </button>
@@ -111,3 +111,4 @@ export function LinkConfirmDialog({
     document.body,
   )
 }
+

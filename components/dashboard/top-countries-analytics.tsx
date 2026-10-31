@@ -153,8 +153,8 @@ export function TopCountriesByViews() {
                     <Bar dataKey="views" fill="url(#barGradient)" radius={[4, 4, 0, 0]} />
                     <defs>
                       <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#f290b0" />
-                        <stop offset="100%" stopColor="#d66f90" />
+                        <stop offset="0%" stopColor="#ef4444" />
+                        <stop offset="100%" stopColor="#b91c1c" />
                       </linearGradient>
                     </defs>
                   </BarChart>
@@ -167,3 +167,4 @@ export function TopCountriesByViews() {
     </Card>
   )
 }
+
